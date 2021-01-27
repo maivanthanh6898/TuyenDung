@@ -110,7 +110,7 @@
                                             <ul class="dropdown">
                                                 <li><a href="job-board.html" target="_blank">Vị trí</a></li>
                                                 <li><a href="single-job-post.html" target="_blank">Đăng nhập</a></li>
-                                                <li><a href="job-details.html" target="_blank">Danh sách công việc</a></li>
+                                                <li><a href="JobList.aspx" target="_blank">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html" target="_blank">Liên hệ</a></li>
@@ -147,7 +147,7 @@
                                             <li><a href="#">TRANG</a>
                                                 <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
-                                                    <li><a href="single-job-post.html">Danh sách công việc</a></li>
+                                                    <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                     <li><a href="job-details.html">Đăng nhập</a></li>
                                                 </ul>
                                             </li>

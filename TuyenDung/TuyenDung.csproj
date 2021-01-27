@@ -186,6 +186,7 @@
     <Content Include="images\video\1.jpg" />
     <Content Include="Index.aspx" />
     <Content Include="index.html" />
+    <Content Include="JobList.aspx" />
     <Content Include="js\ajax-mail.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery.ajaxchimp.min.js" />
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JobList.aspx.cs">
+      <DependentUpon>JobList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JobList.aspx.designer.cs">
+      <DependentUpon>JobList.aspx</DependentUpon>
     </Compile>
     <Compile Include="login.aspx.cs">
       <DependentUpon>login.aspx</DependentUpon>

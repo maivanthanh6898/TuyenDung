@@ -1,7 +1,7 @@
 ﻿USE [TuyenDung]
 GO
 
-/****** Object: Table [dbo].[tblTaiKhoan] Script Date: 1/27/2021 1:40:48 AM ******/
+/****** Object: Table [dbo].[tblTaiKhoan] Script Date: 1/27/2021 10:53:04 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -19,6 +19,49 @@ CREATE TABLE [dbo].[tblTaiKhoan] (
 );
 
 
+USE [TuyenDung]
+GO
+
+/****** Object: Table [dbo].[tblContent] Script Date: 1/27/2021 10:53:22 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tblContent] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL primary key,
+    [sTitle]       NVARCHAR (50) NULL,
+    [sContent]     NVARCHAR (50) NULL,
+    [sPostedDate]  NVARCHAR (50) NULL,
+    [iPostedBy]    INT           NULL,
+    [dReportDate]  DATETIME      NULL,
+    [dExpireDate]  DATETIME      NULL,
+    [sDescription] NVARCHAR (50) NULL,
+    [fSalary]      FLOAT (53)    NULL
+);
+
+CREATE TABLE [dbo].[tblCv] (
+    [Id]        INT           IDENTITY (1, 1) NOT NULL primary key,
+    [sUpdateDate] Datetime NULL,
+    [sPotision] NVARCHAR (50) NULL,
+    [sCvLink] NVARCHAR (50) NULL,
+    [iContenId]     int NULL,
+    [sName]    Nvarchar (50) NULL,
+    [sBirth] DateTime NULL,
+    [sPhoneNumber] NVARCHAR (50) NULL,
+);
+
+CREATE TABLE [dbo].[tblCv] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL primary key,
+    [sUpdateDate]  DATETIME      NULL,
+    [sPotision]    NVARCHAR (50) NULL,
+    [sCvLink]      NVARCHAR (50) NULL,
+    [iContenId]    INT           NULL,
+    [sName]        NVARCHAR (50) NULL,
+    [sBirth]       DATETIME      NULL,
+    [sPhoneNumber] NVARCHAR (50) NULL
+);
 
 
 create proc sp_register
