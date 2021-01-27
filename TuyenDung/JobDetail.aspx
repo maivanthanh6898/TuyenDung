@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="TuyenDung.login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JobDetail.aspx.cs" Inherits="TuyenDung.JobDetail" %>
 
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Login || JobHelp</title>
+    <title>Job Details || JobHelp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -99,32 +99,17 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" >VỊ TRÍ</a>
+                                        <li><a href="job-board.html">VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><asp:HyperLink ID="hyperlink2"
-                                                    Text="Lập trình viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
-                                                <li><asp:HyperLink ID="hyperlink1"
-                                                    Text="Kiểm thử viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
-                                                <li><asp:HyperLink ID="hyperlink3"
-                                                    Text="Phân tích viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
+                                                <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                <li><a href="job-details.html">Kiểm thử viên</a></li>
+                                                <li><a href="job-details.html">Phân tích viên</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" >Vị trí</a></li>
-                                                <li><a href="#" >Đăng nhập</a></li>
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
@@ -163,7 +148,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                    <li><a href="#">Đăng nhập</a></li>
+                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Contact</a></li>
@@ -183,11 +168,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="breadcrumb-text">
-                                <h2 class="text-center text-white uppercase mb-17">Login</h2>
+                                <h2 class="text-center text-white uppercase mb-17">Chi tiết công việc</h2>
                                 <div class="breadcrumb-bar">
                                     <ul class="breadcrumb text-center m-0">
-                                        <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Home</a></li>
-                                        <li class="text-white uppercase ml-15 mr-15">Login</li>
+                                        <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Trang chủ</a></li>
+                                        <li class="text-white uppercase ml-15 mr-15">Chi tiết công việc</li>
                                     </ul>
                                 </div>
                             </div>
@@ -196,68 +181,66 @@
                 </div>
             </div>
             <!--End of Breadcrumb Banner Area-->
-            <!--Start of Account Area-->
-            <div class="account-area pt-70 mb-120" runat="server">
+            <!--Start of Single Job Post Area-->
+            <div class="single-job-post-area pt-70 mb-120">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <form action="#" runat="server">
-                                <div class="area-title text-center">
-                                    <h2 class="pt-10 pb-10">ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN MỚI</h2>
-                                </div>
-                                <div class="account-form-container fix mt-70">
-                                    <div class="text-center fix">
-                                        <a class="button button-style-two medium col-4 border-title bg-white modal-view" href="#" data-toggle="modal" data-target="#productModal">Bạn đã có tài khoản? Đăng nhập</a>
+                            <form action="#">
+                                <div class="single-job-content">
+                                    <div class="area-title text-center">
+                                        <h2 class="pt-10 pb-10">[HCM] CẦN RẤT GẤP JAVA DEVELOPER & LEADER ~ UPTO 1800USD</h2>
                                     </div>
-                                    <div class="login-form mt-36">
-                                        <div class="single-info pb-14 fix">
-                                            <label for="name" class="pull-left m-0 lg-text">User Name:</label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="text" ID="username" placeholder="Please enter your name" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="single-info mb-14 fix">
-                                            <label for="password" class="pull-left m-0 lg-text">Password:</label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="password" ID="password" placeholder="Please enter your password" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="single-info mb-14 fix">
-                                            <label for="r_password" class="pull-left m-0 lg-text">Retype password:</label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="password" ID="r_password" name="r_password" placeholder="Please enter your password" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="single-info mb-14 fix">
-                                            <label for="r_password" class="pull-left m-0 lg-text">Name: </label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="text" ID="name" placeholder="Please enter your password" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="single-info mb-14 fix">
-                                            <label for="r_password" class="pull-left m-0 lg-text">Birth: </label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="text" ID="birth" placeholder="Please enter your birth day (dd/MM/YYYY)" runat="server"></asp:TextBox>
-                                            </div>
-                                        </div>
-                                        <div class="single-info mb-14 fix">
-                                            <label for="r_password" class="pull-left m-0 lg-text">Address: </label>
-                                            <div class="form-box">
-                                                <asp:TextBox type="text" ID="address" placeholder="Please enter your address" runat="server"></asp:TextBox>
-                                            </div>
+                                    <div class="title uppercase pt-70 pb-26"><span>Mô tả công việc</span></div>
+                                    <div class="single-job-form">
+                                        <p>- Phát triển, maintain các ứng dụng web trên nền PHP, C#, Java</p>
+
+                                        <p>- Phân tích và đưa ra các giải pháp kỹ thuật cho các dự án được giao.</p>
+
+                                        <p>- Phát triển UI / UX.</p>
+
+                                        <p>- Tham gia xuyên suốt các công đoạn Phân tích, thiết kế, phát triển và test ứng dụng.</p>
+
+                                        <p>- Đảm bảo tiến độ, chất lượng công việc và báo cáo thường xuyên tới quản lý.</p>
+
+                                        <p>- Tham gia training và viết các tài liệu kỹ thuật.</p>
+
+                                        <p>- Chi tiết khác trao đổi thêm khi phỏng vấn.</p>
+                                    </div>
+                                    <div class="title uppercase mt-58 mb-25"><span class="medium">Quyền lợi</span></div>
+                                    <div class="single-job-form">
+                                        <div class="single-info mb-14">
+                                            <span class="mark-icon block pl-27">Đã có kinh nghiệm làm Team Leader là một lợi thế lớn.</span>
+                                            <span class="mark-icon block pl-27">Có thể làm việc thành thạo trên môi trường Linux</span>
+                                            <span class="mark-icon block pl-27">Có kiến thức về VueJS/Angular/ReactJs</span>
                                         </div>
                                     </div>
-                                    <span class="block conditions">
-                                        <asp:CheckBox ID="CheckBox1" runat="server" class="p-0 pull-left" Text="I agree with the terms of use" />
-                                        <asp:Button ID="Button1" runat="server" Text="Continue" class="button button-style-two medium mt-15" OnClick="Button1_Click" />
-                                    </span>
+                                    <div class="title uppercase mt-58 mb-25"><span>Yêu cầu</span></div>
+                                    <div class="single-job-form">
+                                        <div class="single-info mb-14">
+                                            <span class="number block"><span>1.</span>Có ít nhất 2 năm kinh nghiệm phát triển Web với 1 trong các ngôn ngữ sau : PHP, C# (ASP.NET MVC), Java (Struts2/Spring). </span>
+                                            <span class="number block"><span>2.</span>Thành thạo HTML/Javascript/jQuery/CSS/AJAX. Có thể tạo responsive web pages.</span>
+                                            <span class="number block"><span>3.</span>Thành thạo việc xây dựng và sử dụng web service,API ( XML, JSON)</span>
+                                            <span class="number block"><span>4.</span>Biết Unit testing các sản phẩm do mình làm ra.</span>
+                                            <span class="number block"><span>5.</span>Có kinh nghiệm sử dụng ít nhất 1 hệ quản trị cơ sở dữ liệu(MySql,PostgreSql,MSSQL v.v..).</span>
+                                            <span class="number block"><span>6.</span>Có tư duy lập trình tốt, tư duy lập trình hướng đối tượng, khả năng tự học hỏi và tìm hiểu các công nghệ mới trên nền tảng web</span>
+                                        </div>
+                                    </div>
+                                    <div class="title uppercase pt-47 pb-26"><span class="medium">how to apply</span></div>
+                                    <div class="single-job-form">
+                                        <p>Gửi CV về địa chỉ: Công Ty TNHH JAC Recruitment Vietnam</p>
+                                    </div>
+                                    <div class="mt-38">
+                                        <a href="#" class="button button-large-box lg-btn mr-20">back</a>
+                                        <a href="#" class="button button-large-box lg-btn">Preview</a>
+                                    </div>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End of Account Area-->
+            <!--End of Single Job Post Area-->
             <!--Start of Social Link Area-->
             <div class="social-link-area ptb-40 dark-blue-bg">
                 <div class="container">
@@ -287,39 +270,42 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">Về chúng tôi</h3>
-                                <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                                <h3 class="text-white mb-22">About Us</h3>
+                                <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">Liên hệ</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                                <h3 class="text-white mb-26">GET IN TOUCH</h3>
+                                <span class="text-white mb-9"><i class="fa fa-phone"></i>+88 018 785 4589</span>
+                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>devitems@email.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.devitems.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-map-mark-iconer"></i>ur address goes here,street.</span>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Đường dẫn</h3>
+                                <h3 class="text-white mb-21">Helpful Links</h3>
                                 <ul class="footer-list">
-                                    <li><a href="#">Giới thiệu</a></li>
-                                    <li><a href="#">Hỗ trợ</a></li>
-                                    <li><a href="#">Chi nhánh</a></li>
-                                    <li><a href="#">Định giá</a></li>
-                                    <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Support</a></li>
+                                    <li><a href="#">Affiliate</a></li>
+                                    <li><a href="#">Pricing</a></li>
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-3 hidden-sm">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Vị trí</h3>
+                                <h3 class="text-white mb-21">Trending Jobs</h3>
                                 <ul class="footer-list">
-                                    <li><a href="#">Thiết kế</a></li>
-                                    <li><a href="#">Lập trình</a></li>
-                                    <li><a href="#">Lập trình viên IOS</a></li>
+                                    <li><a href="#">Designer</a></li>
+                                    <li><a href="#">Developer</a></li>
+                                    <li><a href="#">iOS Developer</a></li>
+                                    <li><a href="#">Designer</a></li>
+                                    <li><a href="#">Developer</a></li>
+                                    <li><a href="#">iOS Developer</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -333,7 +319,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href=#" class="text-white"></a></span>
+                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2016.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
                             </div>
                         </div>
                     </div>
@@ -359,13 +345,18 @@
                             <div class="area-title text-center mb-43">
                                 <h2 class="pt-7 pb-7 pl-40 pr-40">Login</h2>
                             </div>
-                            <form>
+                            <form method="post" action="#">
                                 <div class="form-box">
-                                    <input type="text" id="uname" name="username" placeholder="User Name" class="mb-14">
-                                    <input type="password" id="spass" name="pass" placeholder="Password">
+                                    <input type="text" name="username" placeholder="User Name" class="mb-14">
+                                    <input type="password" name="pass" placeholder="Password">
+                                </div>
+                                <div class="fix ptb-30">
+                                    <span class="remember pull-left">
+                                        <input class="p-0 pull-left" type="checkbox">Remember Me</span>
+                                    <span class="pull-right"><a href="#">Forget Password?</a></span>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="text-uppercase" onclick="Login()" style="background-color: whitesmoke; margin-top: 10px">SignIn</button>
+                                    <button type="submit" class="text-uppercase">SignIn</button>
                                 </div>
                             </form>
                         </div>
@@ -376,68 +367,6 @@
     </div>
     <!--End of Login Form-->
 
-    <!--Start of Register Form-->
-    <div id="quickview-register">
-        <!-- Modal -->
-        <div class="modal fade" id="register" tabindex="-1" role="dialog">
-            <div class="modal-dialog register" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-pop-up-content ptb-60 pl-60 pr-60">
-                            <div class="area-title text-center mb-43">
-                                <h2 class="pt-7 pb-7 pl-40 pr-40">Sign Up</h2>
-                            </div>
-                            <form method="post" action="#">
-                                <div class="form-box">
-                                    <input type="text" name="fullname" placeholder="Full Name" class="mb-14">
-                                    <input type="text" name="username" placeholder="User Name" class="mb-14">
-                                    <input type="email" name="email" placeholder="Email" class="mb-14">
-                                    <input type="password" name="pass" placeholder="Password" class="mb-14">
-                                    <input type="password" name="re_pass" placeholder="Confirm Password">
-                                </div>
-                                <div class="fix ptb-30">
-                                    <span class="remember">
-                                        <input class="p-0 pull-left" type="checkbox">
-                                        <span class="fix block">There are many variations of passages of Lorem Ipsum available</span>
-                                    </span>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="text-uppercase">Register</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--End of Register Form-->
-    <script>
-        function Login() {
-            $.ajax({
-                type: "POST",
-                url: '/login.aspx/Login',
-                data: `{username: "${document.getElementById("uname").value}",password:"${document.getElementById("spass").value}" }`,
-                contentType: "application/json; charset=utf-8",
-                success: function (data) {
-                    console.log(data);
-                    if (data.d === "success") {
-                        alert('Đăng nhập thành công');
-                        window.location.href = 'Index.aspx';
-                    } else {
-                        alert('Đăng nhập thất bại');
-                    }
-                },
-                failure: function (response) {
-                    alert(response.d);
-                }
-            });
-        }
-    </script>
 
     <!-- jquery latest version
 		========================================================= -->
