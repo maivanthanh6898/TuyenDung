@@ -97,63 +97,27 @@
                             <div class="pull-right">
                                 <nav id="primary-menu">
                                     <ul class="main-menu text-right">
-                                        <li><a href="index.html">Home</a>
+                                        <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" target="_blank">Job Board</a>
+                                        <li><a href="job-board.html" target="_blank">VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><a href="single-job-post.html" target="_blank">Single Job</a></li>
-                                                <li><a href="job-details.html" target="_blank">Job Details</a></li>
+                                                <li><a href="single-job-post.html" target="_blank">Lập trình viên</a></li>
+                                                <li><a href="job-details.html" target="_blank">Kiểm thử viên</a></li>
+                                                <li><a href="job-details.html" target="_blank">Phân tích viên</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Features</a>
-                                            <ul class="dropdown">
-                                                <li><a href="#">Slider Style<i class="zmdi zmdi-chevron-right"></i></a>
-                                                    <ul class="inside-menu">
-                                                        <li><a href="slider-style-1.html" target="_blank">Slider Style 1</a></li>
-                                                        <li><a href="fixed-image.html" target="_blank">Fixed Background</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Menu Style<i class="zmdi zmdi-chevron-right"></i></a>
-                                                    <ul class="inside-menu">
-                                                        <li><a href="menu-style-1.html" target="_blank">Default Menu</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Page Title<i class="zmdi zmdi-chevron-right"></i></a>
-                                                    <ul class="inside-menu">
-                                                        <li><a href="breadcrumb-center.html" target="_blank">Title Center</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Footer Style<i class="zmdi zmdi-chevron-right"></i></a>
-                                                    <ul class="inside-menu">
-                                                        <li><a href="footer-style-1.html" target="_blank">Footer Style 1</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="resume.html" target="_blank">Resume</a></li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" target="_blank">Job Board</a></li>
-                                                <li><a href="single-job-post.html" target="_blank">Single Job</a></li>
-                                                <li><a href="job-details.html" target="_blank">Job Details</a></li>
-                                                <li><a href="candidates.html" target="_blank">Candidates</a></li>
-                                                <li><a href="resume.html" target="_blank">Resume</a></li>
-                                                <li><a href="blog.html" target="_blank">Blog Page</a></li>
-                                                <li><a href="blog-details.html" target="_blank">Blog Details</a></li>
-                                                <li><a href="login.html" target="_blank">Login Page</a></li>
-                                                <li><a href="contact.html" target="_blank">Contact</a></li>
+                                                <li><a href="job-board.html" target="_blank">Vị trí</a></li>
+                                                <li><a href="single-job-post.html" target="_blank">Đăng nhập</a></li>
+                                                <li><a href="job-details.html" target="_blank">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="blog.html" target="_blank">Blog</a>
-                                            <ul class="dropdown">
-                                                <li><a href="blog-details.html" target="_blank">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html" target="_blank">Contact</a></li>
+                                        <li><a href="contact.html" target="_blank">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36">
-                                    <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Login</a>
+                                    <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
                                 </div>
                             </div>
                         </div>
@@ -167,61 +131,27 @@
                                 <div class="mobile-menu">
                                     <nav id="dropdown">
                                         <ul>
-                                            <li><a href="index.html">HOME</a>
+                                            <li><a href="index.html">TRANG CHỦ</a>
                                                 <ul>
                                                     <li><a href="index.html">Slider Style 1</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="job-board.html">Job Board</a>
+                                            <li><a href="job-board.html">VỊ TRÍ
+                                            </a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="single-job-post.html">Single Job</a></li>
-                                                    <li><a href="job-details.html">Job Details</a></li>
+                                                    <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                    <li><a href="job-details.html">Phân tích viên</a></li>
+                                                    <li><a href="job-details.html">Kiểm thử</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Features</a>
+                                            <li><a href="#">TRANG</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="#">Slider Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="fixed-image.html">Fixed Background</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Menu Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="menu-style-1.html">Default Menu</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Page Title</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="breadcrumb-center.html">Title Center</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="#">Footer Style</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="footer-style-1.html">Footer Style 1</a></li>
-                                                        </ul>
-                                                    </li>
+                                                    <li><a href="job-board.html">Vị trí</a></li>
+                                                    <li><a href="single-job-post.html">Danh sách công việc</a></li>
+                                                    <li><a href="job-details.html">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="resume.html" target="_blank">Resume</a></li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="job-board.html">Job Board</a></li>
-                                                    <li><a href="single-job-post.html">Single Job</a></li>
-                                                    <li><a href="job-details.html">Job Details</a></li>
-                                                    <li><a href="candidates.html">Candidates</a></li>
-                                                    <li><a href="resume.html">Resume</a></li>
-                                                    <li><a href="blog.html">Blog Page</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                    <li><a href="login.html">Login Page</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="#">Contact</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -258,11 +188,11 @@
                         <div class="col-md-8 col-md-offset-2">
                             <form action="#" runat="server">
                                 <div class="area-title text-center">
-                                    <h2 class="pt-10 pb-10">Login or create an account</h2>
+                                    <h2 class="pt-10 pb-10">ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN MỚI</h2>
                                 </div>
                                 <div class="account-form-container fix mt-70">
                                     <div class="text-center fix">
-                                        <a class="button button-style-two medium col-4 border-title bg-white modal-view" href="#" data-toggle="modal" data-target="#productModal">Already have account ? Login</a>
+                                        <a class="button button-style-two medium col-4 border-title bg-white modal-view" href="#" data-toggle="modal" data-target="#productModal">Bạn đã có tài khoản? Đăng nhập</a>
                                     </div>
                                     <div class="login-form mt-36">
                                         <div class="single-info pb-14 fix">
@@ -342,42 +272,39 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">About Us</h3>
-                                <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
+                                <h3 class="text-white mb-22">Về chúng tôi</h3>
+                                <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">GET IN TOUCH</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>+88 018 785 4589</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>devitems@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.devitems.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>ur address goes here,street.</span>
+                                <h3 class="text-white mb-26">Liên hệ</h3>
+                                <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Helpful Links</h3>
+                                <h3 class="text-white mb-21">Đường dẫn</h3>
                                 <ul class="footer-list">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Support</a></li>
-                                    <li><a href="#">Affiliate</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Hỗ trợ</a></li>
+                                    <li><a href="#">Chi nhánh</a></li>
+                                    <li><a href="#">Định giá</a></li>
+                                    <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-3 hidden-sm">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Trending Jobs</h3>
+                                <h3 class="text-white mb-21">Vị trí</h3>
                                 <ul class="footer-list">
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
+                                    <li><a href="#">Thiết kế</a></li>
+                                    <li><a href="#">Lập trình</a></li>
+                                    <li><a href="#">Lập trình viên IOS</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -391,7 +318,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2016.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
+                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href=#" class="text-white"></a></span>
                             </div>
                         </div>
                     </div>
@@ -417,13 +344,15 @@
                             <div class="area-title text-center mb-43">
                                 <h2 class="pt-7 pb-7 pl-40 pr-40">Login</h2>
                             </div>
-                            <div class="form-box">
-                                <input type="text" id="uname" name="username" placeholder="User Name" class="mb-14">
-                                <input type="password" id="spass" name="pass" placeholder="Password">
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="text-uppercase" onclick="Login()">SignIn</button>
-                            </div>
+                            <form>
+                                <div class="form-box">
+                                    <input type="text" id="uname" name="username" placeholder="User Name" class="mb-14">
+                                    <input type="password" id="spass" name="pass" placeholder="Password">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="text-uppercase" onclick="Login()" style="background-color: whitesmoke; margin-top: 10px">SignIn</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
