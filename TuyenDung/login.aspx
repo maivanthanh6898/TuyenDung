@@ -99,21 +99,21 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" target="_blank">VỊ TRÍ</a>
+                                        <li><a href="job-board.html" >VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><a href="single-job-post.html" target="_blank">Lập trình viên</a></li>
-                                                <li><a href="job-details.html" target="_blank">Kiểm thử viên</a></li>
-                                                <li><a href="job-details.html" target="_blank">Phân tích viên</a></li>
+                                                <li><a href="single-job-post.html" >Lập trình viên</a></li>
+                                                <li><a href="job-details.html" >Kiểm thử viên</a></li>
+                                                <li><a href="job-details.html" >Phân tích viên</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" target="_blank">Vị trí</a></li>
-                                                <li><a href="single-job-post.html" target="_blank">Đăng nhập</a></li>
-                                                <li><a href="JobList.aspx" target="_blank">Danh sách công việc</a></li>
+                                                <li><a href="job-board.html" >Vị trí</a></li>
+                                                <li><a href="#" >Đăng nhập</a></li>
+                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html" target="_blank">Liên hệ</a></li>
+                                        <li><a href="contact.html" >Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36">
@@ -148,7 +148,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                    <li><a href="job-details.html">Đăng nhập</a></li>
+                                                    <li><a href="#">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Contact</a></li>

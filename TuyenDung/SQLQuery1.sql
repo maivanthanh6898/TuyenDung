@@ -31,13 +31,13 @@ GO
 
 CREATE TABLE [dbo].[tblContent] (
     [Id]           INT           IDENTITY (1, 1) NOT NULL primary key,
-    [sTitle]       NVARCHAR (50) NULL,
-    [sContent]     NVARCHAR (50) NULL,
+    [sTitle]       NVARCHAR (500) NULL,
+    [sContent]     NVARCHAR (500) NULL,
     [sPostedDate]  NVARCHAR (50) NULL,
     [iPostedBy]    INT           NULL,
     [dReportDate]  DATETIME      NULL,
     [dExpireDate]  DATETIME      NULL,
-    [sDescription] NVARCHAR (50) NULL,
+    [sDescription] NVARCHAR (500) NULL,
     [fSalary]      FLOAT (53)    NULL
 );
 
@@ -79,4 +79,9 @@ create proc SP_Login
 @password nvarchar(50)
 as begin
 select * from tblTaiKhoan where sUsername = @username and sPassword = @password
+end
+
+create proc SP_doGetContent 
+as begin
+select * from tblContent
 end

@@ -99,21 +99,21 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" target="_blank">VỊ TRÍ</a>
+                                        <li><a href="job-board.html">VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><a href="single-job-post.html" target="_blank">Lập trình viên</a></li>
-                                                <li><a href="job-details.html" target="_blank">Kiểm thử viên</a></li>
-                                                <li><a href="job-details.html" target="_blank">Phân tích viên</a></li>
+                                                <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                <li><a href="job-details.html">Kiểm thử viên</a></li>
+                                                <li><a href="job-details.html">Phân tích viên</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" target="_blank">Vị trí</a></li>
-                                                <li><a href="single-job-post.html" target="_blank">Đăng nhập</a></li>
-                                                <li><a href="JobList.aspx" target="_blank">Danh sách công việc</a></li>
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="Login.aspx">Đăng nhập</a></li>
+                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html" target="_blank">Liên hệ</a></li>
+                                        <li><a href="contact.html" >Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36">
@@ -148,7 +148,7 @@
                                                 <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                    <li><a href="job-details.html">Đăng nhập</a></li>
+                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="#">Contact</a></li>
@@ -178,39 +178,6 @@
                             </div>
                             <form action="#" method="post">
                                 <div class="form-container fix bg-opacity-blue-85 mt-125">
-                                    <div class="box-select">
-                                        <div class="select large">
-                                            <select name="category">
-                                                <option>Keywords</option>
-                                                <option>Finance</option>
-                                                <option>Accountant</option>
-                                                <option>Enginner</option>
-                                                <option>Programmer</option>
-                                                <option>Developer</option>
-                                            </select>
-                                        </div>
-                                        <div class="select small">
-                                            <select name="date">
-                                                <option>All Regions</option>
-                                                <option>Dhaka</option>
-                                                <option>Shylet</option>
-                                                <option>Khulna</option>
-                                                <option>Barishal</option>
-                                                <option>Chittagong</option>
-                                            </select>
-                                        </div>
-                                        <div class="select medium">
-                                            <select name="date">
-                                                <option>Category</option>
-                                                <option>Web Design</option>
-                                                <option>Designing</option>
-                                                <option>Development</option>
-                                                <option>Programming</option>
-                                                <option>Developing</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="button-dark pull-right">Search</button>
                                 </div>
                             </form>
                         </div>
@@ -219,12 +186,12 @@
             </div>
             <!--End of Breadcrumb Banner Area-->
             <!--Start of Job Post Area-->
-            <div class="job-post-area ptb-120">
+            <div class="job-post-area pb-120" style="margin-top:20px">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title text-center ">
-                                <h2 class="uppercase">Recent Jobs</h2>
+                                <h2 class="uppercase">Danh sách công việc</h2>
                                 <div class="separator mt-35 mb-77">
                                     <span>
                                         <img src="images/icons/1.png" alt=""></span>
@@ -234,360 +201,120 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="job-post-container fix">
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/1.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Graphic Designer</h4>
-                                            <h5><a href="#">Devitems</a></h5>
+                            <asp:Repeater ID="Repeater" runat="server">
+                                <ItemTemplate>
+                                    <div class="job-post-container fix">
+                                        <div class="single-job-post fix">
+                                            <div class="job-title col-4 pl-30">
+                                                <span class="pull-left block mtb-17">
+                                                    <a href="#">
+                                                        <img src="images/company-logo/1.png" alt=""></a>
+                                                </span>
+                                                <div class="fix pl-30 mt-29">
+                                                     <a href="#"><h4 class="mb-5"><%# Eval("sTitle") %></h4></a>
+                                                    <a href="#"><%# Eval("dReportDate") %> - <%# Eval("dExpireDate") %></a>
+                                                </div>
+                                            </div>
+                                            <div class="address col-4 pl-50">
+                                                <span class="mtb-30 block"><%# Eval("sContent") %></span>
+                                            </div>
+                                            <div class="time-payment col-2 pl-60 text-center pt-22">
+                                                <span class="block mb-6"><%# Eval("fSalary") %>$</span>
+                                                <a href="#" class="button button-red">Full Time</a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 200.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/2.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Web Designer</h4>
-                                            <h5><a href="#">Hastech</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 450.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/3.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Print Designer</h4>
-                                            <h5><a href="#">Bootexperts</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button button-dark-blue">Internship</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/4.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">UI/UX Designer</h4>
-                                            <h5><a href="#">CodeCarnival</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/2.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Web Development</h4>
-                                            <h5><a href="#">PowerBoosts</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button">Part Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/2.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Web Development</h4>
-                                            <h5><a href="#">PowerBoosts</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button">Part Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/4.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">UI/UX Designer</h4>
-                                            <h5><a href="#">CodeCarnival</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/3.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Print Designer</h4>
-                                            <h5><a href="#">Bootexperts</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button button-dark-blue">Internship</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/2.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Graphic Designer</h4>
-                                            <h5><a href="#">Devitems</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 200.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                            </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- End of Job Post Area -->
-            <!--Start of Job Post Area-->
-            <div class="job-post-area pb-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-title text-center ">
-                                <h2 class="uppercase">Featured Jobs</h2>
-                                <div class="separator mt-35 mb-77">
-                                    <span>
-                                        <img src="images/icons/1.png" alt=""></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="job-post-container fix">
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/1.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Graphic Designer</h4>
-                                            <h5><a href="#">Devitems</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 200.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/2.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Web Designer</h4>
-                                            <h5><a href="#">Hastech</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 450.00</span>
-                                        <a href="#" class="button button-red">Full Time</a>
-                                    </div>
-                                </div>
-                                <div class="single-job-post fix">
-                                    <div class="job-title col-4 pl-30">
-                                        <span class="pull-left block mtb-17">
-                                            <a href="#">
-                                                <img src="images/company-logo/3.png" alt=""></a>
-                                        </span>
-                                        <div class="fix pl-30 mt-29">
-                                            <h4 class="mb-5">Print Designer</h4>
-                                            <h5><a href="#">Bootexperts</a></h5>
-                                        </div>
-                                    </div>
-                                    <div class="address col-4 pl-50">
-                                        <span class="mtb-30 block">2020 Willshire Glen,<br>
-                                            Alpharetta, GA-30009</span>
-                                    </div>
-                                    <div class="time-payment col-2 pl-60 text-center pt-22">
-                                        <span class="block mb-6">€ 500.00</span>
-                                        <a href="#" class="button">Part Time</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Job Post Area -->
-            <!--Start of Social Link Area-->
-            <div class="social-link-area ptb-40 dark-blue-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="footer-logo pull-left">
-                                <a href="index.html" class="block">
-                                    <img src="images/logo/footer-logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="social-links pull-right">
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-rss"></i></a>
-                                <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Social Link Area-->
-            <!--Start of Footer Widget-area-->
-            <div class="footer-widget-area black-bg pt-120 pb-110">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">Về chúng tôi</h3>
-                                <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">Liên hệ</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Đường dẫn</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Giới thiệu</a></li>
-                                    <li><a href="#">Hỗ trợ</a></li>
-                                    <li><a href="#">Chi nhánh</a></li>
-                                    <li><a href="#">Định giá</a></li>
-                                    <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 hidden-sm">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Vị trí</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Thiết kế</a></li>
-                                    <li><a href="#">Lập trình</a></li>
-                                    <li><a href="#">Lập trình viên IOS</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Footer Widget-area-->
-            <!-- Start of Footer area -->
-            <footer class="footer-area blue-bg text-center ptb-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href="#" class="text-white"></a></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End of Footer area -->
         </div>
-        <!--End of Bg White-->
+        <!-- End of Job Post Area -->
+        <!--Start of Social Link Area-->
+        <div class="social-link-area ptb-40 dark-blue-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 fix col-xs-12 col-sm-6">
+                        <div class="footer-logo pull-left">
+                            <a href="index.html" class="block">
+                                <img src="images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fix col-xs-12 col-sm-6">
+                        <div class="social-links pull-right">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                            <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                            <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Social Link Area-->
+        <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area black-bg pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-22">Về chúng tôi</h3>
+                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-26">Liên hệ</h3>
+                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Đường dẫn</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Định giá</a></li>
+                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Vị trí</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thiết kế</a></li>
+                                <li><a href="#">Lập trình</a></li>
+                                <li><a href="#">Lập trình viên IOS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer Widget-area-->
+        <!-- Start of Footer area -->
+        <footer class="footer-area blue-bg text-center ptb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-text">
+                            <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href="#" class="text-white"></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer area -->
+    </div>
+    <!--End of Bg White-->
     </div>
     <!--End of Main Wrapper Area-->
 
