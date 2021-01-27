@@ -99,25 +99,25 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" >VỊ TRÍ</a>
+                                        <li><a href="job-board.html">VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><a href="single-job-post.html" >Lập trình viên</a></li>
-                                                <li><a href="job-details.html" >Kiểm thử viên</a></li>
-                                                <li><a href="job-details.html" >Phân tích viên</a></li>
+                                                <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                <li><a href="job-details.html">Kiểm thử viên</a></li>
+                                                <li><a href="job-details.html">Phân tích viên</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" >Vị trí</a></li>
-                                                <li><a href="#" >Đăng nhập</a></li>
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="#">Đăng nhập</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html" >Liên hệ</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36">
-                                    <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
+                                    <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal" runat="server" id="login1">Đăng nhập</a>
                                 </div>
                             </div>
                         </div>
@@ -318,7 +318,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href=#" class="text-white"></a></span>
+                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href="#" class="text-white"></a></span>
                             </div>
                         </div>
                     </div>
