@@ -12,7 +12,10 @@ namespace TuyenDung
         private static String con1 = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"].ToString() != "")
+            {
+                login1.InnerText = Session["username"].ToString();
+            }
         }
         private void reset()
         {
