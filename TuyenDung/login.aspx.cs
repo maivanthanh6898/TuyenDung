@@ -14,7 +14,7 @@ namespace TuyenDung
         {
             if (Session["username"].ToString() != "")
             {
-                login1.InnerText = Session["username"].ToString();
+                //login1.InnerText = Session["username"].ToString();
             }
         }
         private void reset()

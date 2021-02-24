@@ -315,7 +315,6 @@
         <!-- End of Footer area -->
     </div>
     <!--End of Bg White-->
-    </div>
     <!--End of Main Wrapper Area-->
 
     <!--Start of Login Form-->
