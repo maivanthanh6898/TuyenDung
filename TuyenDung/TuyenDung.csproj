@@ -212,7 +212,6 @@
     <Content Include="lib\nivo-slider\img\loading.gif" />
     <Content Include="lib\nivo-slider\js\jquery.nivo.slider.js" />
     <Content Include="login.aspx" />
-    <Content Include="login.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
