@@ -21,6 +21,7 @@ namespace TuyenDung
         void Session_Start(object sender, EventArgs e)
         {
             HttpContext.Current.Session["username"] = "";
+            HttpContext.Current.Session["id"] = 0;
         }
     }
 }

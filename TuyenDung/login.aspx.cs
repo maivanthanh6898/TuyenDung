@@ -10,11 +10,13 @@ namespace TuyenDung
     {
         private String con = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
         private static String con1 = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
+
+        public static string InnerText { get; internal set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["username"].ToString() != "")
             {
-                //login1.InnerText = Session["username"].ToString();
             }
         }
         private void reset()
@@ -94,7 +96,12 @@ namespace TuyenDung
                 var reader = comm.ExecuteReader();
                 if (reader.HasRows)
                 {
-                    HttpContext.Current.Session["UserName"] = username;
+                    while (reader.Read())
+                    {
+
+                        HttpContext.Current.Session["username"] = username;
+                        HttpContext.Current.Session["id"] = reader["Id"].ToString();
+                    }
                     return "success";
                 }
                 else

@@ -99,36 +99,39 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="index.html">Trang chủ</a>
                                         </li>
-                                        <li><a href="job-board.html" >VỊ TRÍ</a>
+                                        <li><a href="job-board.html">VỊ TRÍ</a>
                                             <ul class="dropdown">
-                                                <li><asp:HyperLink ID="hyperlink2"
-                                                    Text="Lập trình viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
-                                                <li><asp:HyperLink ID="hyperlink1"
-                                                    Text="Kiểm thử viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
-                                                <li><asp:HyperLink ID="hyperlink3"
-                                                    Text="Phân tích viên"
-                                NavigateUrl="~/JobDetail.aspx"
-                                runat="server"
-                                class="login-btn">
-                                    </asp:HyperLink></li>
+                                                <li>
+                                                    <asp:HyperLink ID="hyperlink2"
+                                                        Text="Lập trình viên"
+                                                        NavigateUrl="~/JobDetail.aspx"
+                                                        runat="server"
+                                                        class="login-btn">
+                                                    </asp:HyperLink></li>
+                                                <li>
+                                                    <asp:HyperLink ID="hyperlink1"
+                                                        Text="Kiểm thử viên"
+                                                        NavigateUrl="~/JobDetail.aspx"
+                                                        runat="server"
+                                                        class="login-btn">
+                                                    </asp:HyperLink></li>
+                                                <li>
+                                                    <asp:HyperLink ID="hyperlink3"
+                                                        Text="Phân tích viên"
+                                                        NavigateUrl="~/JobDetail.aspx"
+                                                        runat="server"
+                                                        class="login-btn">
+                                                    </asp:HyperLink></li>
                                             </ul>
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html" >Vị trí</a></li>
-                                                <li><a href="#" >Đăng nhập</a></li>
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="#">Đăng nhập</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html" >Liên hệ</a></li>
+                                        <li><a href="contact.html">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36">
@@ -333,7 +336,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href=#" class="text-white"></a></span>
+                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href="#" class="text-white"></a></span>
                             </div>
                         </div>
                     </div>
@@ -362,7 +365,7 @@
                             <form>
                                 <div class="form-box">
                                     <input type="text" id="uname" name="username" placeholder="User Name" class="mb-14">
-                                    <input type="password" id="spass" name="pass" placeholder="Password">
+                                    <input type="password" id="spass" name="password" placeholder="Password">
                                 </div>
                                 <div class="text-center">
                                     <button type="submit" class="text-uppercase" onclick="Login()" style="background-color: whitesmoke; margin-top: 10px">SignIn</button>
@@ -421,10 +424,10 @@
             $.ajax({
                 type: "POST",
                 url: '/login.aspx/Login',
-                data: `{username: "${document.getElementById("uname").value}",password:"${document.getElementById("spass").value}" }`,
-                contentType: "application/json; charset=utf-8",
+                data: `{"username": "${document.getElementById("uname").value}","password":"${document.getElementById("spass").value}" }`,
+                contentType: "application/json",
                 success: function (data) {
-                    console.log(data);
+                    console.log("=======", data.d);
                     if (data.d === "success") {
                         alert('Đăng nhập thành công');
                         window.location.href = 'Index.aspx';

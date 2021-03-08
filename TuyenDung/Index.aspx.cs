@@ -11,7 +11,7 @@ namespace TuyenDung
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Response.Write("<script>alert(`" + Session["username"] + "`)</script>");
+            //Response.Write("<script>alert(`" + Session["username"] + "`)</script>");
         }
     }
 }
