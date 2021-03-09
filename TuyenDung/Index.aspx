@@ -103,9 +103,8 @@
                                                     <li><a href="JobDetail.aspx">Phân tích viên</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Page</a>
+                                            <li><a href="#">Trang</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                 </ul>
                                             </li>
@@ -146,7 +145,7 @@
                                                         <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="Contact.aspx">Contact</a></li>
+                                                <li><a href="Contact.aspx">Liên hệ</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -179,7 +178,7 @@
                                                         which don't look even slightly believable.
                                                     </p>
                                                     <div class="banner-readmore wow bounceInUp mt-35" data-wow-duration="3s" data-wow-delay="2s">
-                                                        <a class="button slider-btn" href="#">Find a job</a>
+                                                        <a class="button slider-btn" href="#">Tiềm việc</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -202,7 +201,7 @@
                                                         which don't look even slightly believable.
                                                     </p>
                                                     <div class="banner-readmore wow bounceInUp mt-35" data-wow-duration="1s" data-wow-delay=".6s">
-                                                        <a class="button slider-btn" href="#">Find a job</a>
+                                                        <a class="button slider-btn" href="#">Tìm việc</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -267,25 +266,25 @@
                         <div class="row">
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
-                                    <h3 class="pb-15 mb-23">Jobs</h3>
+                                    <h3 class="pb-15 mb-23">Công việc</h3>
                                     <h1><span class="counter">1250</span></h1>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
-                                    <h3 class="pb-15 mb-23">Members</h3>
+                                    <h3 class="pb-15 mb-23">Thành viên</h3>
                                     <h1><span class="counter">500</span></h1>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
-                                    <h3 class="pb-15 mb-23">Resume</h3>
+                                    <h3 class="pb-15 mb-23">Hồ sơ</h3>
                                     <h1><span class="counter">700</span></h1>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-3">
                                 <div class="single-fun-factor">
-                                    <h3 class="pb-15 mb-23">Company</h3>
+                                    <h3 class="pb-15 mb-23">Công ty</h3>
                                     <h1><span class="counter">1250</span></h1>
                                 </div>
                             </div>

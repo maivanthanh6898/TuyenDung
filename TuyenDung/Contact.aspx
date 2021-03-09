@@ -103,9 +103,8 @@
                                                     <li><a href="JobDetail.aspx">Phân tích viên</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Page</a>
+                                            <li><a href="#">Trang</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                 </ul>
@@ -165,10 +164,10 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="breadcrumb-text">
-                                    <h2 class="text-center text-white uppercase mb-17">Contact</h2>
+                                    <h2 class="text-center text-white uppercase mb-17">Liên hệ</h2>
                                     <div class="breadcrumb-bar">
                                         <ul class="breadcrumb text-center m-0">
-                                            <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Home</a></li>
+                                            <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Trang chủ</a></li>
                                             <li class="text-white uppercase ml-15 mr-15">Contact</li>
                                         </ul>
                                     </div>
@@ -193,7 +192,7 @@
                         <div class="contact-form white-bg fix pr-125 pl-125 pt-40 pb-35">
                             <form id="contact-form" action="mail.php" method="post">
                                 <div class="col-5 pr-6 mb-15">
-                                    <label for="name" class="block ml-20">Name</label>
+                                    <label for="name" class="block ml-20">Tên</label>
                                     <input type="text" name="name" id="name" class="pl-20" placeholder="Please enter your name">
                                 </div>
                                 <div class="col-5 pl-6 mb-15">
@@ -201,11 +200,11 @@
                                     <input type="text" name="email" id="email" class="pl-20" placeholder="Please enter your email">
                                 </div>
                                 <div class="col-10">
-                                    <label for="message" class="block ml-20">Message</label>
+                                    <label for="message" class="block ml-20">Tin nhắn</label>
                                     <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message" class="mb-10"></textarea>
                                 </div>
                                 <div class="col-10 fix">
-                                    <button type="submit" class="button submit-btn">SUBMIT</button>
+                                    <button type="submit" class="button submit-btn">Gửi</button>
                                 </div>
                                 <p class="form-messege"></p>
                             </form>
@@ -348,15 +347,15 @@
 								</div>
 								<form method="post" action="#">
 									<div class="form-box">
-										<input type="text" name="username" placeholder="User Name" class="mb-14">
-										<input type="password" name="pass" placeholder="Password">
+										<input type="text" name="username" placeholder="User Name" class="mb-14"/>
+										<input type="password" name="pass" placeholder="Password"/>
 									</div>
 									<div class="fix ptb-30">
-										<span class="remember pull-left"><input class="p-0 pull-left" type="checkbox">Remember Me</span>
+										<span class="remember pull-left"><input class="p-0 pull-left" type="checkbox"/>Lưu mật khẩu</span>
 										<span class="pull-right"><a href="#">Forget Password?</a></span>
 									</div>
 									<div class="text-center">
-										<button type="submit" class="text-uppercase">SignIn</button>
+										<button type="submit" class="text-uppercase">Đăng nhập</button>
 									</div>
 								</form>
 							</div>

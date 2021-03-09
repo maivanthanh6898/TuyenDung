@@ -108,7 +108,6 @@
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html">Vị trí</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
@@ -144,12 +143,11 @@
                                             </li>
                                             <li><a href="#">TRANG</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            <li><a href="Contact.aspx">Liên hệ</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -231,7 +229,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-4">
                             <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">About Us</h3>
+                                <h3 class="text-white mb-22">Về chúng tôi</h3>
                                 <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
                             </div>
                         </div>

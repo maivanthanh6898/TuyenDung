@@ -108,7 +108,6 @@
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html">Vị trí</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
@@ -149,7 +148,7 @@
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            <li><a href="Contact.aspx">Liên hệ</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -166,11 +165,11 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="breadcrumb-text">
-                                <h2 class="text-center text-white uppercase mb-17">Job Board</h2>
+                                <h2 class="text-center text-white uppercase mb-17">Danh sách công việc</h2>
                                 <div class="breadcrumb-bar">
                                     <ul class="breadcrumb text-center m-0">
-                                        <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Home</a></li>
-                                        <li class="text-white uppercase ml-15 mr-15">Job Board</li>
+                                        <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Trang chủ</a></li>
+                                        <li class="text-white uppercase ml-15 mr-15">Danh sách công việc</li>
                                     </ul>
                                 </div>
                             </div>
