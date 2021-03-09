@@ -190,6 +190,11 @@
                                         <h2 class="pt-10 pb-10" id="title" runat="server"></h2>
                                     </div>
                                     <div id="content" runat="server"></div>
+                                    <asp:FileUpload ID="FileUploadControl" runat="server" />
+                                    <asp:Button runat="server" ID="UploadButton" Text="Upload" OnClick="UploadButton_Click" />
+                                    <br />
+                                    <br />
+                                    <asp:Label runat="server" ID="StatusLabel" Text="Upload status: " />
                                 </div>
                             </form>
                         </div>

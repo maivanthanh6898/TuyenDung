@@ -32,7 +32,7 @@ GO
 CREATE TABLE [dbo].[tblContent] (
     [Id]           INT           IDENTITY (1, 1) NOT NULL primary key,
     [sTitle]       NVARCHAR (500) NULL,
-    [sContent]     NVARCHAR (500) NULL,
+    [sContent]     NVARCHAR (max) NULL,
     [sPostedDate]  NVARCHAR (50) NULL,
     [iPostedBy]    INT           NULL,
     [dReportDate]  DATETIME      NULL,
@@ -84,4 +84,20 @@ end
 create proc SP_doGetContent 
 as begin
 select * from tblContent
+end
+
+CREATE proc sp_createContent
+@title nvarchar(500),
+@content nvarchar(MAX),
+@postBy int,
+@desc nvarchar(500),
+@slr float
+as
+begin
+INSERT INTO [dbo].[tblContent] ( [sTitle], [sContent], [iPostedBy], [sDescription], [fSalary])
+VALUES
+(@title,
+@content
+,@postBy
+, @desc, @slr)
 end
