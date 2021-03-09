@@ -17,6 +17,7 @@ namespace TuyenDung
         {
             if (Session["username"].ToString() != "")
             {
+                login1.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
             }
         }
         private void reset()

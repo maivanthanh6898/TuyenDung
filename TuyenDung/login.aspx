@@ -127,15 +127,13 @@
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
                                                 <li><a href="job-board.html">Vị trí</a></li>
-                                                <li><a href="#">Đăng nhập</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Liên hệ</a></li>
+                                        <li><a href="Contact.aspx">Liên hệ</a></li>
                                     </ul>
                                 </nav>
-                                <div class="login-btn pt-36">
-                                    <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
+                                <div class="login-btn pt-36" id="login1" runat="server">
                                 </div>
                             </div>
                         </div>

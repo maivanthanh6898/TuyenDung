@@ -85,82 +85,80 @@
         <div class="bg-white">
             <!--Header Area Start-->
             <header id="sticky-header" class="header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12">
+                            <div class="logo">
+                                <a href="Index.aspx">
+                                    <img src="images/logo/logo.png" alt="JobHelp" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 hidden-sm hidden-xs">
+                            <div class="pull-right">
+                                <nav id="primary-menu">
+                                    <ul class="main-menu text-right">
+                                        <li><a href="Index.aspx">Trang chủ</a>
+                                        </li>
+                                        <li><a href="JobDetail.aspx">VỊ TRÍ</a>
+                                            <ul class="dropdown">
+                                                <li><a href="JobDetail.aspx">Lập trình viên</a></li>
+                                                <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
+                                                <li><a href="JobDetail.aspx">Phân tích viên</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Page</a>
+                                            <ul class="dropdown">
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="Contact.aspx">Liên hệ</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="login-btn pt-36" id="login" runat="server">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu Area start -->
+                <div class="mobile-menu-area">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-xs-12">
-                                <div class="logo">
-                                    <a href="Index.aspx">
-                                        <img src="images/logo/logo.png" alt="JobHelp" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-9 hidden-sm hidden-xs">
-                                <div class="pull-right">
-                                    <nav id="primary-menu">
-                                        <ul class="main-menu text-right">
-                                            <li><a href="Index.aspx">Trang chủ</a>
-                                            </li>
-                                            <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Phân tích viên</a></li>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown">
+                                        <ul>
+                                            <li><a href="index.html">TRANG CHỦ</a>
+                                                <ul>
+                                                    <li><a href="index.html">Slider Style 1</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="dropdown">
+                                            <li><a href="job-board.html">VỊ TRÍ
+                                            </a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                    <li><a href="job-details.html">Phân tích viên</a></li>
+                                                    <li><a href="job-details.html">Kiểm thử</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">TRANG</a>
+                                                <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
-                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Liên hệ</a></li>
+                                            <li><a href="Contact.aspx">Contact</a></li>
                                         </ul>
                                     </nav>
-                                    <div class="login-btn pt-36">
-                                        <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Mobile Menu Area start -->
-                    <div class="mobile-menu-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="mobile-menu">
-                                        <nav id="dropdown">
-                                            <ul>
-                                                <li><a href="index.html">TRANG CHỦ</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Slider Style 1</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="job-board.html">VỊ TRÍ
-                                                </a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="single-job-post.html">Lập trình viên</a></li>
-                                                        <li><a href="job-details.html">Phân tích viên</a></li>
-                                                        <li><a href="job-details.html">Kiểm thử</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">TRANG</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="job-board.html">Vị trí</a></li>
-                                                        <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                        <li><a href="Login.aspx">Đăng nhập</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="Contact.aspx">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu Area end -->
-                </header>
+                </div>
+                <!-- Mobile Menu Area end -->
+            </header>
             <!-- End of Header Area -->
             <!--Breadcrumb Banner Area Start-->
             <div class="breadcrumb-banner-area pt-94 pb-85 bg-3 bg-opacity-dark-blue-90">
@@ -189,51 +187,9 @@
                             <form action="#">
                                 <div class="single-job-content">
                                     <div class="area-title text-center">
-                                        <h2 class="pt-10 pb-10">[HCM] CẦN RẤT GẤP JAVA DEVELOPER & LEADER ~ UPTO 1800USD</h2>
+                                        <h2 class="pt-10 pb-10" id="title" runat="server"></h2>
                                     </div>
-                                    <div class="title uppercase pt-70 pb-26"><span>Mô tả công việc</span></div>
-                                    <div class="single-job-form">
-                                        <p>- Phát triển, maintain các ứng dụng web trên nền PHP, C#, Java</p>
-
-                                        <p>- Phân tích và đưa ra các giải pháp kỹ thuật cho các dự án được giao.</p>
-
-                                        <p>- Phát triển UI / UX.</p>
-
-                                        <p>- Tham gia xuyên suốt các công đoạn Phân tích, thiết kế, phát triển và test ứng dụng.</p>
-
-                                        <p>- Đảm bảo tiến độ, chất lượng công việc và báo cáo thường xuyên tới quản lý.</p>
-
-                                        <p>- Tham gia training và viết các tài liệu kỹ thuật.</p>
-
-                                        <p>- Chi tiết khác trao đổi thêm khi phỏng vấn.</p>
-                                    </div>
-                                    <div class="title uppercase mt-58 mb-25"><span class="medium">Quyền lợi</span></div>
-                                    <div class="single-job-form">
-                                        <div class="single-info mb-14">
-                                            <span class="mark-icon block pl-27">Đã có kinh nghiệm làm Team Leader là một lợi thế lớn.</span>
-                                            <span class="mark-icon block pl-27">Có thể làm việc thành thạo trên môi trường Linux</span>
-                                            <span class="mark-icon block pl-27">Có kiến thức về VueJS/Angular/ReactJs</span>
-                                        </div>
-                                    </div>
-                                    <div class="title uppercase mt-58 mb-25"><span>Yêu cầu</span></div>
-                                    <div class="single-job-form">
-                                        <div class="single-info mb-14">
-                                            <span class="number block"><span>1.</span>Có ít nhất 2 năm kinh nghiệm phát triển Web với 1 trong các ngôn ngữ sau : PHP, C# (ASP.NET MVC), Java (Struts2/Spring). </span>
-                                            <span class="number block"><span>2.</span>Thành thạo HTML/Javascript/jQuery/CSS/AJAX. Có thể tạo responsive web pages.</span>
-                                            <span class="number block"><span>3.</span>Thành thạo việc xây dựng và sử dụng web service,API ( XML, JSON)</span>
-                                            <span class="number block"><span>4.</span>Biết Unit testing các sản phẩm do mình làm ra.</span>
-                                            <span class="number block"><span>5.</span>Có kinh nghiệm sử dụng ít nhất 1 hệ quản trị cơ sở dữ liệu(MySql,PostgreSql,MSSQL v.v..).</span>
-                                            <span class="number block"><span>6.</span>Có tư duy lập trình tốt, tư duy lập trình hướng đối tượng, khả năng tự học hỏi và tìm hiểu các công nghệ mới trên nền tảng web</span>
-                                        </div>
-                                    </div>
-                                    <div class="title uppercase pt-47 pb-26"><span class="medium">how to apply</span></div>
-                                    <div class="single-job-form">
-                                        <p>Gửi CV về địa chỉ: Công Ty TNHH JAC Recruitment Vietnam</p>
-                                    </div>
-                                    <div class="mt-38">
-                                        <a href="#" class="button button-large-box lg-btn mr-20">back</a>
-                                        <a href="#" class="button button-large-box lg-btn">Preview</a>
-                                    </div>
+                                    <div id="content" runat="server"></div>
                                 </div>
                             </form>
                         </div>

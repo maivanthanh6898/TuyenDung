@@ -31,7 +31,8 @@ namespace TuyenDung
                 comm.CommandType = CommandType.StoredProcedure;
                 comm.CommandText = "sp_createContent";
                 comm.Parameters.AddWithValue("@title", title.Text);
-                comm.Parameters.AddWithValue("@content", ckcontent.InnerText);
+                comm.Parameters.Add("@content", SqlDbType.NVarChar, -1);
+                comm.Parameters["@content"].Value = ckcontent.InnerText;
                 comm.Parameters.AddWithValue("@postBy", Session["id"].ToString());
                 comm.Parameters.AddWithValue("@desc", description.Text);
                 comm.Parameters.AddWithValue("@slr", salary.Text);

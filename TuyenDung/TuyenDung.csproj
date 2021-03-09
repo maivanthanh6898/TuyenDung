@@ -187,7 +187,6 @@
     <Content Include="images\testimonial\1.jpg" />
     <Content Include="images\video\1.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="index.html" />
     <Content Include="JobDetail.aspx" />
     <Content Include="JobList.aspx" />
     <Content Include="js\ajax-mail.js" />

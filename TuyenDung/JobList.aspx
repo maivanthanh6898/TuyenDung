@@ -85,82 +85,80 @@
         <div class="bg-white">
             <!--Header Area Start-->
             <header id="sticky-header" class="header-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-12">
+                            <div class="logo">
+                                <a href="Index.aspx">
+                                    <img src="images/logo/logo.png" alt="JobHelp" /></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 hidden-sm hidden-xs">
+                            <div class="pull-right">
+                                <nav id="primary-menu">
+                                    <ul class="main-menu text-right">
+                                        <li><a href="Index.aspx">Trang chủ</a>
+                                        </li>
+                                        <li><a href="JobDetail.aspx">VỊ TRÍ</a>
+                                            <ul class="dropdown">
+                                                <li><a href="JobDetail.aspx">Lập trình viên</a></li>
+                                                <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
+                                                <li><a href="JobDetail.aspx">Phân tích viên</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Page</a>
+                                            <ul class="dropdown">
+                                                <li><a href="job-board.html">Vị trí</a></li>
+                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="Contact.aspx">Liên hệ</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="login-btn pt-36" id="login" runat="server">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile Menu Area start -->
+                <div class="mobile-menu-area">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-3 col-xs-12">
-                                <div class="logo">
-                                    <a href="Index.aspx">
-                                        <img src="images/logo/logo.png" alt="JobHelp" /></a>
-                                </div>
-                            </div>
-                            <div class="col-md-9 hidden-sm hidden-xs">
-                                <div class="pull-right">
-                                    <nav id="primary-menu">
-                                        <ul class="main-menu text-right">
-                                            <li><a href="Index.aspx">Trang chủ</a>
-                                            </li>
-                                            <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Phân tích viên</a></li>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="mobile-menu">
+                                    <nav id="dropdown">
+                                        <ul>
+                                            <li><a href="index.html">TRANG CHỦ</a>
+                                                <ul>
+                                                    <li><a href="index.html">Slider Style 1</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Page</a>
-                                                <ul class="dropdown">
+                                            <li><a href="job-board.html">VỊ TRÍ
+                                            </a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                    <li><a href="job-details.html">Phân tích viên</a></li>
+                                                    <li><a href="job-details.html">Kiểm thử</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">TRANG</a>
+                                                <ul class="sub-menu">
                                                     <li><a href="job-board.html">Vị trí</a></li>
-                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                    <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Liên hệ</a></li>
+                                            <li><a href="Contact.aspx">Contact</a></li>
                                         </ul>
                                     </nav>
-                                    <div class="login-btn pt-36">
-                                        <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Mobile Menu Area start -->
-                    <div class="mobile-menu-area">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12">
-                                    <div class="mobile-menu">
-                                        <nav id="dropdown">
-                                            <ul>
-                                                <li><a href="index.html">TRANG CHỦ</a>
-                                                    <ul>
-                                                        <li><a href="index.html">Slider Style 1</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="job-board.html">VỊ TRÍ
-                                                </a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="single-job-post.html">Lập trình viên</a></li>
-                                                        <li><a href="job-details.html">Phân tích viên</a></li>
-                                                        <li><a href="job-details.html">Kiểm thử</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">TRANG</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="job-board.html">Vị trí</a></li>
-                                                        <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                        <li><a href="Login.aspx">Đăng nhập</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="Contact.aspx">Contact</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Mobile Menu Area end -->
-                </header>
+                </div>
+                <!-- Mobile Menu Area end -->
+            </header>
             <!-- End of Header Area -->
             <!--Breadcrumb Banner Area Start-->
             <div class="breadcrumb-banner-area pt-150 bg-3 bg-opacity-black-60">
@@ -186,7 +184,7 @@
             </div>
             <!--End of Breadcrumb Banner Area-->
             <!--Start of Job Post Area-->
-            <div class="job-post-area pb-120" style="margin-top:20px">
+            <div class="job-post-area pb-120" style="margin-top: 20px">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -207,20 +205,22 @@
                                         <div class="single-job-post fix">
                                             <div class="job-title col-4 pl-30">
                                                 <span class="pull-left block mtb-17">
-                                                    <a href="#">
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>">
                                                         <img src="images/company-logo/1.png" alt=""></a>
                                                 </span>
                                                 <div class="fix pl-30 mt-29">
-                                                     <a href="#"><h4 class="mb-5"><%# Eval("sTitle") %></h4></a>
-                                                    <a href="#"><%# Eval("dReportDate") %> - <%# Eval("dExpireDate") %></a>
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>">
+                                                        <h4 class="mb-5"><%# Eval("sTitle") %></h4>
+                                                    </a>
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>"><%# Eval("dReportDate") %> - <%# Eval("dExpireDate") %></a>
                                                 </div>
                                             </div>
                                             <div class="address col-4 pl-50">
-                                                <span class="mtb-30 block"><%# Eval("sContent") %></span>
+                                                <span class="mtb-30 block"><%# Eval("sDescription") %></span>
                                             </div>
                                             <div class="time-payment col-2 pl-60 text-center pt-22">
                                                 <span class="block mb-6"><%# Eval("fSalary") %>$</span>
-                                                <a href="#" class="button button-red">Full Time</a>
+                                                <a href="JobDetail.aspx?id=<%# Eval("Id") %>" class="button button-red">Full Time</a>
                                             </div>
                                         </div>
                                 </ItemTemplate>
