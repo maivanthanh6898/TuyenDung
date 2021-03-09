@@ -99,13 +99,6 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="Index.aspx">Trang chủ</a>
                                         </li>
-                                        <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                            <ul class="dropdown">
-                                                <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                <li><a href="JobDetail.aspx">Phân tích viên</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
@@ -221,6 +214,7 @@
                                                 <span class="block mb-6"><%# Eval("fSalary") %>$</span>
                                                 <a href="JobDetail.aspx?id=<%# Eval("Id") %>" class="button button-red">Full Time</a>
                                             </div>
+                                        </div>
                                         </div>
                                 </ItemTemplate>
                             </asp:Repeater>

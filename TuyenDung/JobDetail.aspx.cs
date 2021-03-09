@@ -41,7 +41,7 @@ namespace TuyenDung
                     while (reader.Read())
                     {
                         title.InnerText = reader["sTitle"].ToString();
-                        content.InnerHtml= reader["sContent"].ToString();
+                        content.InnerHtml = reader["sContent"].ToString();
                     }
                 }
             }
@@ -55,6 +55,25 @@ namespace TuyenDung
                 {
                     string filename = Path.GetFileName(FileUploadControl.FileName);
                     FileUploadControl.SaveAs(Server.MapPath("~/folder/") + filename);
+                    using (SqlConnection conn = new SqlConnection(con))
+                    {
+                        conn.Open();
+                        SqlCommand comm = new SqlCommand();
+                        comm.Connection = conn;
+                        comm.CommandType = CommandType.StoredProcedure;
+                        comm.CommandText = "sp_uploadCv";
+                        comm.Parameters.AddWithValue("@id", Request.QueryString["id"]);
+                        comm.Parameters.AddWithValue("@link", MapPath("~/folder/") + filename);
+                        int ire = comm.ExecuteNonQuery();
+                        if (ire < 1)
+                        {
+                            Response.Write("<script>alert('Đăng thất bại')</script>");
+                        }
+                        else
+                        {
+                            Response.Write("<script>alert('Đăng thành công!!')</script>");
+                        }
+                    }
                     StatusLabel.Text = "Upload status: File uploaded!";
                 }
                 catch (Exception ex)

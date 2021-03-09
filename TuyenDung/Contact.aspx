@@ -94,15 +94,7 @@
                                 <div class="pull-right">
                                     <nav id="primary-menu">
                                         <ul class="main-menu text-right">
-                                            <li><a href="Index.aspx">Trang chủ</a>
-                                            </li>
-                                            <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Phân tích viên</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="Index.aspx">Trang chủ</a></li>
                                             <li><a href="#">Trang</a>
                                                 <ul class="dropdown">
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
@@ -142,7 +134,6 @@
                                                 </li>
                                                 <li><a href="#">TRANG</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="job-board.html">Vị trí</a></li>
                                                         <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                         <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     </ul>
@@ -193,15 +184,15 @@
                             <form id="contact-form" action="mail.php" method="post">
                                 <div class="col-5 pr-6 mb-15">
                                     <label for="name" class="block ml-20">Tên</label>
-                                    <input type="text" name="name" id="name" class="pl-20" placeholder="Please enter your name">
+                                    <input type="text" name="name" id="name" class="pl-20" placeholder="Nhập tên của bạn">
                                 </div>
                                 <div class="col-5 pl-6 mb-15">
                                     <label for="email" class="block ml-20">Email</label>
-                                    <input type="text" name="email" id="email" class="pl-20" placeholder="Please enter your email">
+                                    <input type="text" name="email" id="email" class="pl-20" placeholder="Nhập Email">
                                 </div>
                                 <div class="col-10">
                                     <label for="message" class="block ml-20">Tin nhắn</label>
-                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Please enter your message" class="mb-10"></textarea>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Nhập tin nhắn " class="mb-10"></textarea>
                                 </div>
                                 <div class="col-10 fix">
                                     <button type="submit" class="button submit-btn">Gửi</button>
@@ -215,8 +206,8 @@
                                     <i class="zmdi zmdi-email"></i>
                                 </div>
                                 <div class="single-contact-text mt-18">
-                                    <span class="block">devitems@email.com</span>
-                                    <span class="block">jobhelp25@email.com</span>
+                                    <span class="block">www.fithou.com</span>
+                                    <span class="block">abcd@email.com</span>
                                 </div>
                             </div>
                             <div class="single-contact-info">
@@ -224,8 +215,8 @@
                                     <i class="zmdi zmdi-phone"></i>
                                 </div>
                                 <div class="single-contact-text mt-18">
-                                    <span class="block">+9 55845 5485 685</span>
-                                    <span class="block">+58 96584 5785 658</span>
+                                    <span class="block">+84 337981919</span>
+                                    <span class="block">+84 123456789</span>
                                 </div>
                             </div>
                             <div class="single-contact-info">
@@ -233,8 +224,8 @@
                                     <i class="zmdi zmdi-pin"></i>
                                 </div>
                                 <div class="single-contact-text mt-18">
-                                    <span class="block">House 09, Road 32, Mohammadpur,</span>
-                                    <span class="block">Dhaka-1200, UK</span>
+                                    <span class="block">96 Định công.</span>
+                                    <span class="block">Thanh Xuân</span>
                                 </div>
                             </div>
                         </div>
@@ -265,53 +256,51 @@
                 </div>
                 <!--End of Social Link Area--> 
                 <!--Start of Footer Widget-area-->
-                <div class="footer-widget-area black-bg pt-120 pb-110">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-4">
-                                <div class="single-footer-widget">
-                                    <h3 class="text-white mb-22">About Us</h3>
-                                    <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="single-footer-widget">
-                                    <h3 class="text-white mb-26">GET IN TOUCH</h3>
-                                    <span class="text-white mb-9"><i class="fa fa-phone"></i>+88 018 785 4589</span>
-                                    <span class="text-white mb-9"><i class="fa fa-envelope"></i>devitems@email.com</span>
-                                    <span class="text-white mb-9"><i class="fa fa-globe"></i>www.devitems.com</span>
-                                    <span class="text-white mb-9"><i class="fa fa-map-marker"></i>ur address goes here,street.</span>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-4">
-                                <div class="single-footer-widget">
-                                    <h3 class="text-white mb-21">Helpful Links</h3>
-                                    <ul class="footer-list">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Support</a></li>
-                                        <li><a href="#">Affiliate</a></li>
-                                        <li><a href="#">Pricing</a></li>
-                                        <li><a href="#">Terms &amp; Conditions</a></li>
-                                        <li><a href="#">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-3 hidden-sm">
-                                <div class="single-footer-widget">
-                                    <h3 class="text-white mb-21">Trending Jobs</h3>
-                                    <ul class="footer-list">
-                                        <li><a href="#">Designer</a></li>
-                                        <li><a href="#">Developer</a></li>
-                                        <li><a href="#">iOS Developer</a></li>
-                                        <li><a href="#">Designer</a></li>
-                                        <li><a href="#">Developer</a></li>
-                                        <li><a href="#">iOS Developer</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area black-bg pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-22">Về chúng tôi</h3>
+                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-26">Liên hệ</h3>
+                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Đường dẫn</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Định giá</a></li>
+                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Vị trí</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thiết kế</a></li>
+                                <li><a href="#">Lập trình</a></li>
+                                <li><a href="#">Lập trình viên IOS</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
                 <!--End of Footer Widget-area-->
                 <!-- Start of Footer area -->
                 <footer class="footer-area blue-bg text-center ptb-20">
@@ -319,7 +308,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="footer-text">
-                                    <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2016.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
+                                    <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2021.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
                                 </div>
                             </div>
                         </div>

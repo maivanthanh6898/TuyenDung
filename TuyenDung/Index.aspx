@@ -96,13 +96,6 @@
                                         <ul class="main-menu text-right">
                                             <li><a href="Index.aspx">Trang chủ</a>
                                             </li>
-                                            <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                                <ul class="dropdown">
-                                                    <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                    <li><a href="JobDetail.aspx">Phân tích viên</a></li>
-                                                </ul>
-                                            </li>
                                             <li><a href="#">Trang</a>
                                                 <ul class="dropdown">
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
@@ -161,8 +154,8 @@
                 <div class="slider-area">
                     <div class="preview-2">
                         <div id="nivoslider" class="slides">
-                            <img src="images/slider/1.jpg" alt="" title="#slider-1-caption1" />
-                            <img src="images/slider/2.jpg" alt="" title="#slider-1-caption2" />
+                            <img src="https://preview.hasthemes.com/jobhelp-preview/jobhelp/images/slider/1.jpg" alt="" title="#slider-1-caption1" />
+                            <img src="https://preview.hasthemes.com/jobhelp-preview/jobhelp/images/slider/2.jpg" alt="" title="#slider-1-caption2" />
                         </div>
                         <div id="slider-1-caption1" class="nivo-html-caption nivo-caption">
                             <div class="banner-content slider-1">
@@ -171,14 +164,13 @@
                                         <div class="col-md-12">
                                             <div class="text-content-wrapper">
                                                 <div class="text-content">
-                                                    <h1 class="title1 wow bounceInDown text-uppercase text-white mb-16" data-wow-duration="3s" data-wow-delay="0s">LOOKING FOR A JOB?</h1>
+                                                    <h1 class="title1 wow bounceInDown text-uppercase text-white mb-16" data-wow-duration="3s" data-wow-delay="0s">BẠN MUỐN TÌM VIỆC LÀM?</h1>
                                                     <p class="sub-title wow bounceInRight hidden-xs" data-wow-duration="3s" data-wow-delay="1s">
-                                                        There are many variations of passages of Lorem Ipsum available, but the majority<br>
-                                                        have suffered alteration in some form, by injected humour, or randomised words<br>
-                                                        which don't look even slightly believable.
+                                                        TÌM VIỆC KHÓ - CÓ JOBHELP<br>
+                                                        SỞ HỮU NGAY CV XỊN CÙNG VIỆC LÀM MƠ ƯỚC<br>
                                                     </p>
                                                     <div class="banner-readmore wow bounceInUp mt-35" data-wow-duration="3s" data-wow-delay="2s">
-                                                        <a class="button slider-btn" href="#">Tiềm việc</a>
+                                                        <a class="button slider-btn" href="#">Tìm việc</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -194,11 +186,10 @@
                                         <div class="col-md-12">
                                             <div class="text-content-wrapper">
                                                 <div class="text-content slide-2">
-                                                    <h1 class="title1 wow flipInX text-uppercase text-white mb-16" data-wow-duration="1s" data-wow-delay="0s">LOOKING FOR A JOB?</h1>
+                                                    <h1 class="title1 wow flipInX text-uppercase text-white mb-16" data-wow-duration="1s" data-wow-delay="0s">BẠN MUỐN TÌM VIỆC LÀM?</h1>
                                                     <p class="sub-title wow lightSpeedIn hidden-xs" data-wow-duration="1s" data-wow-delay=".2s">
-                                                        There are many variations of passages of Lorem Ipsum available, but the majority<br>
-                                                        have suffered alteration in some form, by injected humour, or randomised words<br>
-                                                        which don't look even slightly believable.
+                                                        TÌM VIỆC KHÓ - CÓ JOBHELP<br>
+                                                        SỞ HỮU NGAY CV XỊN CÙNG VIỆC LÀM MƠ ƯỚC<br>
                                                     </p>
                                                     <div class="banner-readmore wow bounceInUp mt-35" data-wow-duration="1s" data-wow-delay=".6s">
                                                         <a class="button slider-btn" href="#">Tìm việc</a>
@@ -219,7 +210,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title text-center ">
-                                    <h2 class="uppercase">Recent Jobs</h2>
+                                    <h2 class="uppercase">Công việc hiện nay</h2>
                                     <div class="separator mt-35 mb-77">
                                         <span>
                                             <img src="images/icons/1.png" alt=""></span>
@@ -252,6 +243,7 @@
                                                     <span class="block mb-6"><%# Eval("fSalary") %>$</span>
                                                     <a href="JobDetail.aspx?id=<%# Eval("Id") %>" class="button button-red">Full Time</a>
                                                 </div>
+                                            </div>
                                             </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
@@ -320,98 +312,93 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Blog Area-->
-            <!--Start of Social Link Area-->
-            <div class="social-link-area ptb-40 dark-blue-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="footer-logo pull-left">
-                                <a href="index.html" class="block">
-                                    <img src="images/logo/footer-logo.png" alt=""></a>
+                <!--End of Blog Area-->
+                <!--Start of Social Link Area-->
+                <div class="social-link-area ptb-40 dark-blue-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 fix col-xs-12 col-sm-6">
+                                <div class="footer-logo pull-left">
+                                    <a href="index.html" class="block">
+                                        <img src="images/logo/footer-logo.png" alt=""></a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="social-links pull-right">
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-rss"></i></a>
-                                <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Social Link Area-->
-            <!--Start of Footer Widget-area-->
-            <div class="footer-widget-area black-bg pt-120 pb-110">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">About Us</h3>
-                                <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">GET IN TOUCH</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>+88 018 785 4589</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>devitems@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.devitems.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>ur address goes here,street.</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Helpful Links</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Support</a></li>
-                                    <li><a href="#">Affiliate</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 hidden-sm">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Trending Jobs</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
-                                </ul>
+                            <div class="col-md-6 fix col-xs-12 col-sm-6">
+                                <div class="social-links pull-right">
+                                    <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                                    <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--End of Footer Widget-area-->
-            <!-- Start of Footer area -->
-            <footer class="footer-area blue-bg text-center ptb-20">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2016.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
-                            </div>
+                <!--End of Social Link Area-->
+                <!--Start of Footer Widget-area-->
+                <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area black-bg pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-22">Về chúng tôi</h3>
+                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-26">Liên hệ</h3>
+                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Đường dẫn</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Định giá</a></li>
+                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Vị trí</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thiết kế</a></li>
+                                <li><a href="#">Lập trình</a></li>
+                                <li><a href="#">Lập trình viên IOS</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer area -->
+            </div>
+        </div>
+                <!--End of Footer Widget-area-->
+                <!-- Start of Footer area -->
+                <footer class="footer-area blue-bg text-center ptb-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="footer-text">
+                                    <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2021.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- End of Footer area -->
+            </div>
         </div>
         <!--End of Bg White-->
-        </div>
-        <!--End of Main Wrapper Area-->
-
         <!--Start of Login Form-->
         <div id="quickview-login">
             <!-- Modal -->
