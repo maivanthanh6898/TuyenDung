@@ -101,3 +101,15 @@ VALUES
 ,@postBy
 , @desc, @slr)
 end
+
+
+
+CREATE proc sp_uploadCv
+@id int,
+@link nvarchar(50)
+as
+begin
+INSERT INTO [dbo].[tblCv] ( [sCvLink],[iContenId])
+VALUES
+(@link,@id)
+end

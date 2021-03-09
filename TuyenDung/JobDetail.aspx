@@ -184,7 +184,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <form action="#">
+                            <form action="#" runat="server">
                                 <div class="single-job-content">
                                     <div class="area-title text-center">
                                         <h2 class="pt-10 pb-10" id="title" runat="server"></h2>
