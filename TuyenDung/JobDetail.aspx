@@ -99,16 +99,8 @@
                                     <ul class="main-menu text-right">
                                         <li><a href="Index.aspx">Trang chủ</a>
                                         </li>
-                                        <li><a href="JobDetail.aspx">VỊ TRÍ</a>
-                                            <ul class="dropdown">
-                                                <li><a href="JobDetail.aspx">Lập trình viên</a></li>
-                                                <li><a href="JobDetail.aspx">Kiểm thử viên</a></li>
-                                                <li><a href="JobDetail.aspx">Phân tích viên</a></li>
-                                            </ul>
-                                        </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="job-board.html">Vị trí</a></li>
                                                 <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                             </ul>
                                         </li>
@@ -144,12 +136,11 @@
                                             </li>
                                             <li><a href="#">TRANG</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="Contact.aspx">Contact</a></li>
+                                            <li><a href="Contact.aspx">Liên hệ</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -226,53 +217,51 @@
             </div>
             <!--End of Social Link Area-->
             <!--Start of Footer Widget-area-->
-            <div class="footer-widget-area black-bg pt-120 pb-110">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">About Us</h3>
-                                <p class="text-white pr-10">There are many vations of passages of Lorem Ipsumable, but the majority have suffered altetion in some form, by injected ur, or randomised words which don't look even slightly believable</p>
-                            </div>
+            <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area black-bg pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-22">Về chúng tôi</h3>
+                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
                         </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">GET IN TOUCH</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>+88 018 785 4589</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>devitems@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.devitems.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-mark-iconer"></i>ur address goes here,street.</span>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-26">Liên hệ</h3>
+                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
                         </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Helpful Links</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Support</a></li>
-                                    <li><a href="#">Affiliate</a></li>
-                                    <li><a href="#">Pricing</a></li>
-                                    <li><a href="#">Terms &amp; Conditions</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Đường dẫn</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Định giá</a></li>
+                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
                         </div>
-                        <div class="col-md-3 hidden-sm">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Trending Jobs</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
-                                    <li><a href="#">Designer</a></li>
-                                    <li><a href="#">Developer</a></li>
-                                    <li><a href="#">iOS Developer</a></li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Vị trí</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thiết kế</a></li>
+                                <li><a href="#">Lập trình</a></li>
+                                <li><a href="#">Lập trình viên IOS</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
             <!--End of Footer Widget-area-->
             <!-- Start of Footer area -->
             <footer class="footer-area blue-bg text-center ptb-20">
@@ -280,7 +269,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2016.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
+                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2021.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
                             </div>
                         </div>
                     </div>
