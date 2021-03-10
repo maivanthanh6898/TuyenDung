@@ -130,6 +130,7 @@
     <Content Include="css\shortcode\header.css" />
     <Content Include="css\shortcode\shortcodes.css" />
     <Content Include="css\shortcode\slider.css" />
+    <Content Include="DataTableJob.aspx" />
     <Content Include="Editor.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -254,6 +255,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataTableJob.aspx.cs">
+      <DependentUpon>DataTableJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataTableJob.aspx.designer.cs">
+      <DependentUpon>DataTableJob.aspx</DependentUpon>
     </Compile>
     <Compile Include="Editor.aspx.cs">
       <DependentUpon>Editor.aspx</DependentUpon>
