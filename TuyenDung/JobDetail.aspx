@@ -186,6 +186,7 @@
                                     <br />
                                     <br />
                                     <asp:Label runat="server" ID="StatusLabel" Text="Upload status: " />
+                                    <asp:Button runat="server" ID="listcv" Text="Danh sách Cv" OnClick="listcv_Click" />
                                 </div>
                             </form>
                         </div>

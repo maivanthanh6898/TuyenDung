@@ -311,3 +311,5 @@ INSERT INTO [dbo].[tblCv] ( [sCvLink],[iContenId])
 VALUES
 (@link,@id)
 end
+
+select * from tblCv where iContenId = 22

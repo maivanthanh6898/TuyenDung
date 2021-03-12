@@ -14,19 +14,20 @@ namespace TuyenDung
     public partial class JobDetail : System.Web.UI.Page
     {
         private String con = ConfigurationManager.ConnectionStrings["conStr"].ConnectionString;
-
+        private string id;
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"].ToString() != "")
-            {
-                login.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
-            }
-            string id = Request.QueryString["id"];
+            id = Request.QueryString["id"];
             if (id == null || id == "")
             {
                 Response.Write("<h1>404 not found</h1>");
                 Response.StatusCode = 404;
                 Response.End();
+            }
+            if (Session["username"].ToString() != "")
+            {
+                Response.Redirect("JobDetail.aspx?id=" + id);
+                login.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
             }
             using (SqlConnection conn = new SqlConnection(con))
             {
@@ -80,6 +81,18 @@ namespace TuyenDung
                 {
                     StatusLabel.Text = "Upload status: The file could not be uploaded. The following error occured: " + ex.Message;
                 }
+            }
+        }
+
+        protected void listcv_Click(object sender, EventArgs e)
+        {
+            if (Session["username"].ToString() != "")
+            {
+                Response.Redirect("DataTableJob.aspx?id=" + id);
+            }
+            else
+            {
+                listcv.Enabled = false;
             }
         }
     }

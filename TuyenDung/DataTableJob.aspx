@@ -95,7 +95,7 @@
                                             </li>
                                             <li><a href="#">Page</a>
                                                 <ul class="dropdown">
-                                                    <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                    <li><a href="JobList.aspx">Danh sách cv</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="Contact.aspx">Liên hệ</a></li>
@@ -130,7 +130,7 @@
                                                 </li>
                                                 <li><a href="#">TRANG</a>
                                                     <ul class="sub-menu">
-                                                        <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                        <li><a href="JobList.aspx">Danh sách cv</a></li>
                                                         <li><a href="Login.aspx">Đăng nhập</a></li>
                                                     </ul>
                                                 </li>
@@ -169,7 +169,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="section-title text-center ">
-                                    <h2 class="uppercase">Danh sách công việc</h2>
+                                    <h2 class="uppercase">Danh sách cv</h2>
                                     <div class="separator mt-35 mb-77">
                                         <span>
                                             <img src="images/icons/1.png" alt=""></span>
@@ -181,178 +181,31 @@
                             <div class="col-md-12">
                                 <div class="card shadow mb-4">
                                     <div class="card-header py-3">
-                                        <h6 class="m-0 font-weight-bold text-primary">Danh sách công việc</h6>
+                                        <h6 class="m-0 font-weight-bold text-primary">Danh sách cv</h6>
                                     </div>
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                                 <thead>
                                                     <tr>
-                                                        <th>Name</th>
-                                                        <th>Position</th>
-                                                        <th>Office</th>
-                                                        <th>Age</th>
-                                                        <th>Start date</th>
-                                                        <th>Salary</th>
+                                                        <th>Cv</th>
                                                         <th></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr>
-                                                        <td>Tiger Nixon</td>
-                                                        <td>System Architect</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>61</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>2011/04/25</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Garrett Winters</td>
-                                                        <td>Accountant</td>
-                                                        <td>Tokyo</td>
-                                                        <td>63</td>
-                                                        <td>2011/07/25</td>
-                                                        <td>$170,750</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Ashton Cox</td>
-                                                        <td>Junior Technical Author</td>
-                                                        <td>San Francisco</td>
-                                                        <td>66</td>
-                                                        <td>2009/01/12</td>
-                                                        <td>$86,000</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Cedric Kelly</td>
-                                                        <td>Senior Javascript Developer</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>22</td>
-                                                        <td>2012/03/29</td>
-                                                        <td>$433,060</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Airi Satou</td>
-                                                        <td>Accountant</td>
-                                                        <td>Tokyo</td>
-                                                        <td>33</td>
-                                                        <td>2008/11/28</td>
-                                                        <td>$162,700</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Colleen Hurst</td>
-                                                        <td>Javascript Developer</td>
-                                                        <td>San Francisco</td>
-                                                        <td>39</td>
-                                                        <td>2009/09/15</td>
-                                                        <td>$205,500</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Sonya Frost</td>
-                                                        <td>Software Engineer</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>23</td>
-                                                        <td>2008/12/13</td>
-                                                        <td>$103,600</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jena Gaines</td>
-                                                        <td>Office Manager</td>
-                                                        <td>London</td>
-                                                        <td>30</td>
-                                                        <td>2008/12/19</td>
-                                                        <td>$90,560</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Paul Byrd</td>
-                                                        <td>Chief Financial Officer (CFO)</td>
-                                                        <td>New York</td>
-                                                        <td>64</td>
-                                                        <td>2010/06/09</td>
-                                                        <td>$725,000</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Gloria Little</td>
-                                                        <td>Systems Administrator</td>
-                                                        <td>New York</td>
-                                                        <td>59</td>
-                                                        <td>2009/04/10</td>
-                                                        <td>$237,500</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Bradley Greer</td>
-                                                        <td>Software Engineer</td>
-                                                        <td>London</td>
-                                                        <td>41</td>
-                                                        <td>2012/10/13</td>
-                                                        <td>$132,000</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Dai Rios</td>
-                                                        <td>Personnel Lead</td>
-                                                        <td>Edinburgh</td>
-                                                        <td>35</td>
-                                                        <td>2012/09/26</td>
-                                                        <td>$217,500</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Jenette Caldwell</td>
-                                                        <td>Development Lead</td>
-                                                        <td>New York</td>
-                                                        <td>30</td>
-                                                        <td>2011/09/03</td>
-                                                        <td>$345,000</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-primary">Tải về</button>
-                                                            <button type="button" class="btn btn-danger">Xóa</button></td>
-
-                                                    </tr>
+                                                    <asp:DataList ID="NANA" runat="server" OnItemCommand="Download" RepeatDirection="Horizontal" BorderStyle="None" Style="padding: 0px!important" K>
+                                                        <ItemTemplate>
+                                                            <table cellpadding="2" cellspacing="0" border="1" style="width: 300px; height: 100px; border: dashed 2px #04AFEF; background-color: #FFFFFF">
+                                                                <tr>
+                                                                    <td>
+                                                                        <asp:LinkButton ID="ButtonDownload" runat="server" Style="padding-left: 5px; text-decoration: none"
+                                                                            ToolTip="Click here to download" CommandName="Download" CommandArgument='<%# DataBinder.Eval(Container.DataItem,"sCvLink") %>'
+                                                                            Text=' <%# DataBinder.Eval(Container.DataItem,"name") %>'></asp:LinkButton>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </ItemTemplate>
+                                                    </asp:DataList>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -448,6 +301,22 @@
             </div>
         </div>
     </form>
+    <script>
+        function download(filename) {
+            $.ajax({
+                type: "POST",
+                url: '/DataTableJob.aspx/Download',
+                data: `{"fileName": ${filename}}`,
+                contentType: "application/octet-stream",
+                success: function (data) {
+                    console.log("=======", data.d);
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+    </script>
     <!-- jquery latest version
 		========================================================= -->
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
