@@ -15,7 +15,7 @@
 
     <!-- Google Fonts
         ============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <!-- All css files are included here
         ============================================ -->
@@ -84,99 +84,74 @@
         <!--Bg White Start-->
         <div class="bg-white">
             <!--Header Area Start-->
-            <header id="sticky-header" class="header-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-xs-12">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="images/logo/logo.png" alt="JobHelp"></a>
-                            </div>
-                        </div>
-                        <div class="col-md-9 hidden-sm hidden-xs">
-                            <div class="pull-right">
-                                <nav id="primary-menu">
-                                    <ul class="main-menu text-right">
-                                        <li><a href="index.html">Trang chủ</a>
-                                        </li>
-                                        <li><a href="job-board.html">VỊ TRÍ</a>
-                                            <ul class="dropdown">
-                                                <li>
-                                                    <asp:HyperLink ID="hyperlink2"
-                                                        Text="Lập trình viên"
-                                                        NavigateUrl="~/JobDetail.aspx"
-                                                        runat="server"
-                                                        class="login-btn">
-                                                    </asp:HyperLink></li>
-                                                <li>
-                                                    <asp:HyperLink ID="hyperlink1"
-                                                        Text="Kiểm thử viên"
-                                                        NavigateUrl="~/JobDetail.aspx"
-                                                        runat="server"
-                                                        class="login-btn">
-                                                    </asp:HyperLink></li>
-                                                <li>
-                                                    <asp:HyperLink ID="hyperlink3"
-                                                        Text="Phân tích viên"
-                                                        NavigateUrl="~/JobDetail.aspx"
-                                                        runat="server"
-                                                        class="login-btn">
-                                                    </asp:HyperLink></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Page</a>
-                                            <ul class="dropdown">
-                                                <li><a href="job-board.html">Vị trí</a></li>
-                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="Contact.aspx">Liên hệ</a></li>
-                                    </ul>
-                                </nav>
-                                <div class="login-btn pt-36" id="login1" runat="server">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile Menu Area start -->
-                <div class="mobile-menu-area">
+           <header id="sticky-header" class="header-area">
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="mobile-menu">
-                                    <nav id="dropdown">
-                                        <ul>
-                                            <li><a href="index.html">TRANG CHỦ</a>
-                                                <ul>
-                                                    <li><a href="index.html">Slider Style 1</a></li>
-                                                </ul>
+                            <div class="col-md-3 col-xs-12">
+                                <div class="logo">
+                                    <a href="Index.aspx">
+                                        <img src="images/logo/logo.png" alt="JobHelp" /></a>
+                                </div>
+                            </div>
+                            <div class="col-md-9 hidden-sm hidden-xs">
+                                <div class="pull-right">
+                                    <nav id="primary-menu">
+                                        <ul class="main-menu text-right">
+                                            <li><a href="Index.aspx">Trang chủ</a>
                                             </li>
-                                            <li><a href="job-board.html">VỊ TRÍ
-                                            </a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="single-job-post.html">Lập trình viên</a></li>
-                                                    <li><a href="job-details.html">Phân tích viên</a></li>
-                                                    <li><a href="job-details.html">Kiểm thử</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">TRANG</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="job-board.html">Vị trí</a></li>
+                                            <li><a href="#">Trang</a>
+                                                <ul class="dropdown">
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
-                                                    <li><a href="#">Đăng nhập</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="Contact.aspx">Liên hệ</a></li>
                                         </ul>
                                     </nav>
+                                    <div class="login-btn pt-36" id="login" runat="server">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Mobile Menu Area end -->
-            </header>
+                    <!-- Mobile Menu Area start -->
+                    <div class="mobile-menu-area">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="mobile-menu">
+                                        <nav id="dropdown">
+                                            <ul>
+                                                <li><a href="index.html">TRANG CHỦ</a>
+                                                    <ul>
+                                                        <li><a href="index.html">Slider Style 1</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="job-board.html">VỊ TRÍ
+                                                </a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="single-job-post.html">Lập trình viên</a></li>
+                                                        <li><a href="job-details.html">Phân tích viên</a></li>
+                                                        <li><a href="job-details.html">Kiểm thử</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">TRANG</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="job-board.html">Vị trí</a></li>
+                                                        <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                        <li><a href="Login.aspx">Đăng nhập</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="Contact.aspx">Liên hệ</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu Area end -->
+                </header>
+                <!-- End of Header Area -->
             <!-- End of Header Area -->
             <!--Breadcrumb Banner Area Start-->
             <div class="breadcrumb-banner-area pt-94 pb-85 bg-3 bg-opacity-dark-blue-90">

@@ -40,7 +40,7 @@ NOTE: This is Slider style file. All Slider related style included in this file.
     vertical-align: middle;
 }
 h1.title1 {
-    font-family: "montserratextrabold";
+    font-family: 'Roboto', sans-serif;
     font-size: 70px;
 }
 h1.title1.text-medium {
@@ -58,7 +58,7 @@ p.sub-title {
     line-height: 50px;
 }
 .button.slider-btn {
-    font-family: "montserratsemi_bold";
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     padding: 10px 41px;
 }
