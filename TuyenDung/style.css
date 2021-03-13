@@ -64,12 +64,17 @@
 }
 .job-title a {display: block;}
 .job-title a img {border: 1px solid #E5E5E5}
-.job-title h4 {font-family: "montserratregular";}
-.job-title h5 {color: #646464; font-family: "montserratsemi_bold";}
+.job-title h4 {
+    font-family: 'Roboto', sans-serif;
+}
+.job-title h5 {
+    color: #646464;
+    font-family: 'Roboto', sans-serif;
+}
 .address span {color: #6d6d6d; line-height: 24px;}
 .time-payment span {
     color: #6d6d6d;
-    font-family: "montserratsemi_bold";
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 24px
 }
@@ -85,10 +90,10 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 /*  2.  Fun Factor Area
 /*----------------------------------------*/
 .single-fun-factor h3 {
-	font-family: "montserratsemi_bold";
-	font-size: 32px;
-	line-height: 27px;
-	position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    line-height: 27px;
+    position: relative;
 }
 .single-fun-factor > h1 {font-size: 52px; line-height: 39px;}
 .single-fun-factor h3:after {
@@ -129,8 +134,14 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 	margin: auto;
 	width: 143px;
 }
-.testimonial-name {font-family: "montserratsemi_bold"; font-size: 24px;}
-.testimonial-title {font-family: "montserratregular"; font-size: 14px;}
+.testimonial-name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.testimonial-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
 .testimonial-text {position: relative;}
 .testimonial-text:after {
     background: #ffffff none repeat scroll 0 0;
@@ -174,14 +185,17 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 .blog-image {border-bottom: 4px solid transparent;}
 .blog-image img {width: 100%;}
 .blog-date {
-	display: inline-block;
-	font-family: "montserratregular";
-	height: 66px;
-	line-height: 24px;
-	text-align: center;
-	width: 77px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    height: 66px;
+    line-height: 24px;
+    text-align: center;
+    width: 77px;
 }
-.blog-date span.text-large {font-family: "montserratsemi_bold"; font-size: 30px;}
+    .blog-date span.text-large {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+    }
 .blog-post-info > span {
     color: #8e8e8e;
     display: inline-block;
@@ -189,7 +203,10 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 }
 .blog-post-info {display: inline-block;}
 .blog-post-info > span i{bottom: -2px; position: relative}
-.blog-text > h5 {color: #5c5c5c; font-family: "montserratsemi_bold";}
+.blog-text > h5 {
+    color: #5c5c5c;
+    font-family: 'Roboto', sans-serif;
+}
 .blog-text > p {color: #8e8e8e; font-size: 12px;}
 /*----------------------------------------*/
 /*  6.  Job Board Page
@@ -202,7 +219,7 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 }
 .breadcrumb-text h2 {line-height: 25px;}
 .breadcrumb-bar li {
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     line-height: 12px;
     position: relative;
@@ -222,7 +239,7 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 .breadcrumb-bar a {color: #ffffff;}
 .form-container {
     color: #555454;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
     padding: 38px 180px;
     position: relative;
@@ -254,38 +271,38 @@ a.button.large-button {line-height: 33px; padding: 0 30px}
 /*  7.  Single Job Post Page
 /*----------------------------------------*/
 .single-info label {
-	color: #525252;
-	font-family: "montserratsemi_bold";
-	font-size: 14px;
-	width: 160px;
-	line-height: 34px;
+    color: #525252;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    width: 160px;
+    line-height: 34px;
 }
-.single-info input{
-	font-size: 12px;
-	color: #a2a2a2;
-	font-family: 'montserratlight';
-	height: 36px;
-	border: 1px solid #DEDEDE;
-	background: #fff
+.single-info input {
+    font-size: 12px;
+    color: #a2a2a2;
+    font-family: 'Roboto', sans-serif;
+    height: 36px;
+    border: 1px solid #DEDEDE;
+    background: #fff
 }
 .single-info input.dark-border {border-color: #a2a2a2;}
 .area-title > h2, .border-title {
     border: 1px solid #525252;
     color: #525252;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     font-size: 24px;
 }
 .border-title {font-size: 16px; border: 1px solid #A2A2A2}
 .background-title {
     font-size: 16px;
     color: #fff;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
 }
 .title > span {
     border: 1px solid #dedede;
     color: #606060;
     display: inline-block;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     padding: 7px 23px;
 }
 .title > span.lg {padding: 7px 46px}
@@ -299,7 +316,7 @@ textarea.textarea {
     border-right: 1px solid #dedede;
     font-size: 12px;
     color: #a2a2a2;
-    font-family: 'montserratlight';
+    font-family: 'Roboto', sans-serif;
     height: 150px;
     border: 1px solid #DEDEDE;
     resize: none
@@ -338,30 +355,30 @@ textarea.textarea.small{height: 120px}
 	width: 65%;
 }
 .action {
-	color: #5e5e5e;
-	font-size: 12px;
-	height: 100%;
-	overflow: hidden;
-	text-align: right;
-	float: right;
-	line-height: 34px;
-	padding-right: 14px;
-	font-family: 'montserratlight';
+    color: #5e5e5e;
+    font-size: 12px;
+    height: 100%;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+    line-height: 34px;
+    padding-right: 14px;
+    font-family: 'Roboto', sans-serif;
 }
 .action i{font-size: 12px; margin-right: 7px}
 .photo-uploader .action {
-	color: #ffffff;
-	font-family: "montserratregular";
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
-	width: 102px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 102px;
 }
 .max-size {
-	color: #a2a2a2;
-	font-family: "montserratlight";
-	font-size: 12px;
-	line-height: 36px;
+    color: #a2a2a2;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 36px;
 }
 /*----------------------------------------*/
 /*  8.  Candidates Page
@@ -394,19 +411,19 @@ textarea.textarea.small{height: 120px}
 	position: absolute;
 	top: -1px;
 }
-.number > span {
-	display: inline-block;
-	font-family: "montserratregular";
-	width: 20px;
-}
+    .number > span {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        width: 20px;
+    }
 /*----------------------------------------*/
 /*  10.  Blog Page
 /*----------------------------------------*/
 .sidebar-widget-title h4 {
-	color: #3e3e3e;
-	font-family: "montserratregular";
-	font-size: 24px;
-	line-height: 21px;
+    color: #3e3e3e;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 21px;
 }
 .search-container input {
     background: #ffffff none repeat scroll 0 0;
@@ -421,7 +438,7 @@ textarea.textarea.small{height: 120px}
 .sidebar-widget-lists > li a:hover {padding-left: 5px}
 .sidebar-widget-lists > li {border-bottom: 1px solid #eaeaea; line-height: 18px;}
 .sidebar-widget-lists > li:last-child {border: 0 none;}
-.recent-post-item h5 {color: #5c5c5c; font-family: "montserratregular";}
+.recent-post-item h5 {color: #5c5c5c; font-family: 'Roboto', sans-serif;}
 .recent-post-item span {color: #616161;}
 .recent-post-item {border-bottom: 1px solid #eaeaea;}
 .recent-post-item:last-child {border: 0 none;}
@@ -445,7 +462,7 @@ textarea.textarea.small{height: 120px}
 .comments {color: #4c4c4c;}
 h4.title {
 	color: #4c4c4c;
-	font-family: "montserratregular";
+	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	position: relative;
 }
@@ -469,7 +486,7 @@ h4.title:after {
 .comment-text {border-bottom: 1px solid #f0f0f0;}
 .author-info > h4 {
     display: inline-block;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 21px;
 }
@@ -477,7 +494,7 @@ h4.title:after {
 span.reply a:hover {color: #2D3E50;}
 .comment-time, span.reply {
     float: right;
-    font-family: "montserratregular";
+    font-family: 'Roboto', sans-serif;
     line-height: 22px;
 }
 span.comment-time {padding-right: 3px; position: relative;}
@@ -491,7 +508,7 @@ span.comment-time {padding-right: 3px; position: relative;}
 /*----------------------------------------*/
 /*  11.  Account Page
 /*----------------------------------------*/
-.single-info label.lg-text {font-family: "montserratregular"; font-size: 16px;}
+.single-info label.lg-text {font-family: 'Roboto', sans-serif; font-size: 16px;}
 p.panel-title {
 	color: #414141;
 	font-size: 14px;
@@ -499,7 +516,7 @@ p.panel-title {
 }
 .conditions {
     color: #959595;
-    font-family: "montserratlight";
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
 }
 .conditions input[type="radio"], input[type="checkbox"] {
@@ -550,7 +567,7 @@ p.panel-title {
     background: #ffffff none repeat scroll 0 0;
     border: 1px solid #cccccc;
     color: #959595;
-    font-family: "montserratlight";
+    font-family: 'Roboto', sans-serif;
     height: 36px;
     padding: 0 16px;
 }
@@ -571,10 +588,10 @@ p.panel-title {
 	width: 28px;
 }
 .modal-dialog button.close:after {display: none}
-.form-pop-up-content span a {font-family: "montserratlight"; font-size: 12px;}
+.form-pop-up-content span a {font-family: 'Roboto', sans-serif; font-size: 12px;}
 .remember {
     color: #959595;
-    font-family: "montserratlight";
+    font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 .remember input[type="checkbox"] {
@@ -627,7 +644,7 @@ p.panel-title {
 }
 .contact-form label {
     color: #9a9a9a;
-    font-family: "montserratlight";
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
 }
 .contact-form input, .contact-form textarea {
