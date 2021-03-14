@@ -106,6 +106,8 @@
                                     </nav>
                                     <div class="login-btn pt-36" id="login" runat="server">
                                     </div>
+                                    <div class="login-btn pt-36" id="Div1" runat="server">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +246,7 @@
                                                     <a href="JobDetail.aspx?id=<%# Eval("Id") %>" class="button button-red">Full Time</a>
                                                 </div>
                                             </div>
-                                            </div>
+                                        </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </div>
@@ -338,50 +340,50 @@
                 <!--End of Social Link Area-->
                 <!--Start of Footer Widget-area-->
                 <!--Start of Footer Widget-area-->
-        <div class="footer-widget-area black-bg pt-120 pb-110">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-22">Về chúng tôi</h3>
-                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-26">Liên hệ</h3>
-                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
-                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
-                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
-                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-21">Đường dẫn</h3>
-                            <ul class="footer-list">
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Hỗ trợ</a></li>
-                                <li><a href="#">Chi nhánh</a></li>
-                                <li><a href="#">Định giá</a></li>
-                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-                                <li><a href="#">Liên hệ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 hidden-sm">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-21">Vị trí</h3>
-                            <ul class="footer-list">
-                                <li><a href="#">Thiết kế</a></li>
-                                <li><a href="#">Lập trình</a></li>
-                                <li><a href="#">Lập trình viên IOS</a></li>
-                            </ul>
+                <div class="footer-widget-area black-bg pt-120 pb-110">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-22">Về chúng tôi</h3>
+                                    <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-26">Liên hệ</h3>
+                                    <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                                    <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                                    <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                                    <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21">Đường dẫn</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Hỗ trợ</a></li>
+                                        <li><a href="#">Chi nhánh</a></li>
+                                        <li><a href="#">Định giá</a></li>
+                                        <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 hidden-sm">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21">Vị trí</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Thiết kế</a></li>
+                                        <li><a href="#">Lập trình</a></li>
+                                        <li><a href="#">Lập trình viên IOS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
                 <!--End of Footer Widget-area-->
                 <!-- Start of Footer area -->
                 <footer class="footer-area blue-bg text-center ptb-20">

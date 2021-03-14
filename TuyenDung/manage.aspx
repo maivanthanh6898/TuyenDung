@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="JobDetail.aspx.cs" Inherits="TuyenDung.JobDetail" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="manage.aspx.cs" Inherits="TuyenDung.manage" %>
 
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Job Details || JobHelp</title>
+    <title>Job Board || JobHelp</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -101,15 +101,13 @@
                                         </li>
                                         <li><a href="#">Page</a>
                                             <ul class="dropdown">
-                                                <li><a href="JobList.aspx">Danh sách công việc</a></li>
+                                                <li><a href="JobList.aspx">Danh sách công việc của bạn</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="Contact.aspx">Liên hệ</a></li>
                                     </ul>
                                 </nav>
                                 <div class="login-btn pt-36" id="login" runat="server">
-                                </div>
-                                <div class="login-btn pt-36" id="Div1" runat="server">
                                 </div>
                             </div>
                         </div>
@@ -138,6 +136,7 @@
                                             </li>
                                             <li><a href="#">TRANG</a>
                                                 <ul class="sub-menu">
+                                                    <li><a href="job-board.html">Vị trí</a></li>
                                                     <li><a href="JobList.aspx">Danh sách công việc</a></li>
                                                     <li><a href="Login.aspx">Đăng nhập</a></li>
                                                 </ul>
@@ -154,134 +153,161 @@
             </header>
             <!-- End of Header Area -->
             <!--Breadcrumb Banner Area Start-->
-            <div class="breadcrumb-banner-area pt-94 pb-85 bg-3 bg-opacity-dark-blue-90">
+            <div class="breadcrumb-banner-area pt-150 bg-3 bg-opacity-black-60">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="breadcrumb-text">
-                                <h2 class="text-center text-white uppercase mb-17">Chi tiết công việc</h2>
+                                <h2 class="text-center text-white uppercase mb-17">Danh sách công việc</h2>
                                 <div class="breadcrumb-bar">
                                     <ul class="breadcrumb text-center m-0">
                                         <li class="text-white uppercase ml-15 mr-15"><a href="index.html">Trang chủ</a></li>
-                                        <li class="text-white uppercase ml-15 mr-15">Chi tiết công việc</li>
+                                        <li class="text-white uppercase ml-15 mr-15">Danh sách công việc</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Breadcrumb Banner Area-->
-            <!--Start of Single Job Post Area-->
-            <div class="single-job-post-area pt-70 mb-120">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <form action="#" runat="server">
-                                <div class="single-job-content">
-                                    <div class="area-title text-center">
-                                        <h2 class="pt-10 pb-10" id="title" runat="server"></h2>
-                                    </div>
-                                    <div id="content" runat="server"></div>
-                                    <asp:FileUpload ID="FileUploadControl" runat="server" />
-                                    <asp:Button runat="server" ID="UploadButton" Text="Upload" OnClick="UploadButton_Click" />
-                                    <br />
-                                    <br />
-                                    <asp:Label runat="server" ID="StatusLabel" Text="Upload status: " />
-                                    <asp:Button runat="server" ID="listcv" Text="Danh sách Cv" OnClick="listcv_Click" />
+                            <form action="#" method="post">
+                                <div class="form-container fix bg-opacity-blue-85 mt-125">
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End of Single Job Post Area-->
-            <!--Start of Social Link Area-->
-            <div class="social-link-area ptb-40 dark-blue-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="footer-logo pull-left">
-                                <a href="index.html" class="block">
-                                    <img src="images/logo/footer-logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 fix col-xs-12 col-sm-6">
-                            <div class="social-links pull-right">
-                                <a href="#"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="#"><i class="zmdi zmdi-rss"></i></a>
-                                <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
-                                <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
-                                <a href="#"><i class="zmdi zmdi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Social Link Area-->
-            <!--Start of Footer Widget-area-->
-            <!--Start of Footer Widget-area-->
-            <div class="footer-widget-area black-bg pt-120 pb-110">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-22">Về chúng tôi</h3>
-                                <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-26">Liên hệ</h3>
-                                <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
-                                <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
-                                <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-4">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Đường dẫn</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Giới thiệu</a></li>
-                                    <li><a href="#">Hỗ trợ</a></li>
-                                    <li><a href="#">Chi nhánh</a></li>
-                                    <li><a href="#">Định giá</a></li>
-                                    <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-3 hidden-sm">
-                            <div class="single-footer-widget">
-                                <h3 class="text-white mb-21">Vị trí</h3>
-                                <ul class="footer-list">
-                                    <li><a href="#">Thiết kế</a></li>
-                                    <li><a href="#">Lập trình</a></li>
-                                    <li><a href="#">Lập trình viên IOS</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End of Footer Widget-area-->
-            <!-- Start of Footer area -->
-            <footer class="footer-area blue-bg text-center ptb-20">
+            <!--End of Breadcrumb Banner Area-->
+            <!--Start of Job Post Area-->
+            <div class="job-post-area pb-120" style="margin-top: 20px">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="footer-text">
-                                <span class="text-white block">Copyright&copy; <span>JOBHELP</span> 2021.All right reserved.Created by <a href="https://freethemescloud.com/" class="text-white">Free themes Cloud</a></span>
+                            <div class="section-title text-center ">
+                                <h2 class="uppercase">Danh sách công việc</h2>
+                                <div class="separator mt-35 mb-77">
+                                    <span>
+                                        <img src="images/icons/1.png" alt=""></span>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <asp:Repeater ID="Repeater" runat="server">
+                                <ItemTemplate>
+                                    <div class="job-post-container fix">
+                                        <div class="single-job-post fix">
+                                            <div class="job-title col-4 pl-30">
+                                                <span class="pull-left block mtb-17">
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>">
+                                                        <img src="images/company-logo/1.png" alt=""></a>
+                                                </span>
+                                                <div class="fix pl-30 mt-29">
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>">
+                                                        <h4 class="mb-5"><%# Eval("sTitle") %></h4>
+                                                    </a>
+                                                    <a href="JobDetail.aspx?id=<%# Eval("Id") %>"><%# Eval("dReportDate") %> - <%# Eval("dExpireDate") %></a>
+                                                </div>
+                                            </div>
+                                            <div class="address col-4 pl-50">
+                                                <span class="mtb-30 block"><%# ChangeStatus(Convert.ToString(Eval("isApproved")))%></span>
+                                            </div>
+                                            <div class="time-payment col-2 pl-60 text-center pt-22">
+                                                <a class="button button-red" onclick="hide(<%# Eval("Id") %>)">Ẩn</a>
+                                                <a class="button button-red" onclick="show(<%# Eval("Id") %>)">Hiện</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </div>
                 </div>
-            </footer>
-            <!-- End of Footer area -->
+            </div>
         </div>
-        <!--End of Bg White-->
+        <!-- End of Job Post Area -->
+        <!--Start of Social Link Area-->
+        <div class="social-link-area ptb-40 dark-blue-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 fix col-xs-12 col-sm-6">
+                        <div class="footer-logo pull-left">
+                            <a href="index.html" class="block">
+                                <img src="images/logo/footer-logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 fix col-xs-12 col-sm-6">
+                        <div class="social-links pull-right">
+                            <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                            <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                            <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                            <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                            <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Social Link Area-->
+        <!--Start of Footer Widget-area-->
+        <div class="footer-widget-area black-bg pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-22">Về chúng tôi</h3>
+                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-26">Liên hệ</h3>
+                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Đường dẫn</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Giới thiệu</a></li>
+                                <li><a href="#">Hỗ trợ</a></li>
+                                <li><a href="#">Chi nhánh</a></li>
+                                <li><a href="#">Định giá</a></li>
+                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                <li><a href="#">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="single-footer-widget">
+                            <h3 class="text-white mb-21">Vị trí</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Thiết kế</a></li>
+                                <li><a href="#">Lập trình</a></li>
+                                <li><a href="#">Lập trình viên IOS</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer Widget-area-->
+        <!-- Start of Footer area -->
+        <footer class="footer-area blue-bg text-center ptb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-text">
+                            <span class="text-white block">Copyright&copy; <span>JOBHELP</span> FITHOU - 2021 <a href="#" class="text-white"></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer area -->
     </div>
+    <!--End of Bg White-->
     <!--End of Main Wrapper Area-->
 
     <!--Start of Login Form-->
@@ -320,6 +346,48 @@
     </div>
     <!--End of Login Form-->
 
+    <script>
+        function hide(id) {
+            $.ajax({
+                type: "POST",
+                url: '/manage.aspx/hide',
+                data: `{"id": "${id}" }`,
+                contentType: "application/json",
+                success: function (data) {
+                    console.log("=======", data.d);
+                    if (data.d === "success") {
+                        alert('cập nhập thành công');
+                        location.reload();
+                    } else {
+                        alert('cập nhập thất bại');
+                    }
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+        function show(id) {
+            $.ajax({
+                type: "POST",
+                url: '/manage.aspx/show',
+                data: `{"id": "${id}" }`,
+                contentType: "application/json",
+                success: function (data) {
+                    console.log("=======", data.d);
+                    if (data.d === "success") {
+                        alert('cập nhập thành công');
+                        location.reload();
+                    } else {
+                        alert('cập nhập thất bại');
+                    }
+                },
+                failure: function (response) {
+                    alert(response.d);
+                }
+            });
+        }
+    </script>
 
     <!-- jquery latest version
 		========================================================= -->

@@ -110,8 +110,9 @@
                                         <li><a href="Contact.aspx">Liên hệ</a></li>
                                     </ul>
                                 </nav>
-                                <div class="login-btn pt-36">
-                                    <a class="modal-view button" href="Login.aspx" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
+                                <div class="login-btn pt-36" id="login" runat="server">
+                                </div>
+                                <div class="login-btn pt-36" id="Div1" runat="server">
                                 </div>
                             </div>
                         </div>

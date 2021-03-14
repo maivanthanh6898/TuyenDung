@@ -16,13 +16,19 @@ namespace TuyenDung
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["username"].ToString() != "")
-            {
-            }
+            login.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
+            Div1.InnerHtml = "<a class=\"modal-view button\" href=\"manage.aspx\">QL Bài đăng</a>";
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
         {
+            if (title.Text == "" || title.Text == null
+                || ckcontent.InnerText == "" || ckcontent.InnerText == null
+                || description.Text == "" || description.Text == null
+                || salary.Text == "" || salary.Text == null)
+            {
+                return;
+            }
             using (SqlConnection conn = new SqlConnection(con))
             {
                 conn.Open();

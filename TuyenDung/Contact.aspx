@@ -104,8 +104,9 @@
                                             <li><a href="Contact.aspx">Liên hệ</a></li>
                                         </ul>
                                     </nav>
-                                    <div class="login-btn pt-36">
-                                        <a class="modal-view button" href="#" data-toggle="modal" data-target="#productModal">Đăng nhập</a>
+                                    <div class="login-btn pt-36" id="login" runat="server">
+                                    </div>
+                                    <div class="login-btn pt-36" id="Div1" runat="server">
                                     </div>
                                 </div>
                             </div>
@@ -174,7 +175,7 @@
                     <div class="google-map-area">
                         <!--  Map Section -->
                         <div id="contacts" class="map-area">
-                            <div id="googleMap" style="width:100%;height:485px;filter: grayscale(100%);-webkit-filter: grayscale(100%);"></div>
+                            <div id="googleMap" style="width: 100%; height: 485px; filter: grayscale(100%); -webkit-filter: grayscale(100%);"></div>
                         </div>
                     </div>
                     <!--End of Google Map-->
@@ -229,7 +230,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                     <!--End of Contact Form ANd info-->
                 </div>
                 <!--End of Map and Contact Form-->
@@ -239,7 +240,8 @@
                         <div class="row">
                             <div class="col-md-6 fix col-xs-12 col-sm-6">
                                 <div class="footer-logo pull-left">
-                                    <a href="index.html" class="block"><img src="images/logo/footer-logo.png" alt=""></a>
+                                    <a href="index.html" class="block">
+                                        <img src="images/logo/footer-logo.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-md-6 fix col-xs-12 col-sm-6">
@@ -254,53 +256,53 @@
                         </div>
                     </div>
                 </div>
-                <!--End of Social Link Area--> 
+                <!--End of Social Link Area-->
                 <!--Start of Footer Widget-area-->
                 <!--Start of Footer Widget-area-->
-        <div class="footer-widget-area black-bg pt-120 pb-110">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-22">Về chúng tôi</h3>
-                            <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-26">Liên hệ</h3>
-                            <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
-                            <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
-                            <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
-                            <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-21">Đường dẫn</h3>
-                            <ul class="footer-list">
-                                <li><a href="#">Giới thiệu</a></li>
-                                <li><a href="#">Hỗ trợ</a></li>
-                                <li><a href="#">Chi nhánh</a></li>
-                                <li><a href="#">Định giá</a></li>
-                                <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
-                                <li><a href="#">Liên hệ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-3 hidden-sm">
-                        <div class="single-footer-widget">
-                            <h3 class="text-white mb-21">Vị trí</h3>
-                            <ul class="footer-list">
-                                <li><a href="#">Thiết kế</a></li>
-                                <li><a href="#">Lập trình</a></li>
-                                <li><a href="#">Lập trình viên IOS</a></li>
-                            </ul>
+                <div class="footer-widget-area black-bg pt-120 pb-110">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-22">Về chúng tôi</h3>
+                                    <p class="text-white pr-10">Chuyên đề lập trình ứng dụng</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-26">Liên hệ</h3>
+                                    <span class="text-white mb-9"><i class="fa fa-phone"></i>0123456789</span>
+                                    <span class="text-white mb-9"><i class="fa fa-envelope"></i>abcd@email.com</span>
+                                    <span class="text-white mb-9"><i class="fa fa-globe"></i>www.fithou.com</span>
+                                    <span class="text-white mb-9"><i class="fa fa-map-marker"></i>96 Định công.</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-4">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21">Đường dẫn</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Hỗ trợ</a></li>
+                                        <li><a href="#">Chi nhánh</a></li>
+                                        <li><a href="#">Định giá</a></li>
+                                        <li><a href="#">Điều khoản &amp; Điều kiện</a></li>
+                                        <li><a href="#">Liên hệ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3 hidden-sm">
+                                <div class="single-footer-widget">
+                                    <h3 class="text-white mb-21">Vị trí</h3>
+                                    <ul class="footer-list">
+                                        <li><a href="#">Thiết kế</a></li>
+                                        <li><a href="#">Lập trình</a></li>
+                                        <li><a href="#">Lập trình viên IOS</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
                 <!--End of Footer Widget-area-->
                 <!-- Start of Footer area -->
                 <footer class="footer-area blue-bg text-center ptb-20">
@@ -315,11 +317,11 @@
                     </div>
                 </footer>
                 <!-- End of Footer area -->
-            </div>   
-            <!--End of Bg White--> 
-        </div>   
-        <!--End of Main Wrapper Area-->  
-			
+            </div>
+            <!--End of Bg White-->
+        </div>
+        <!--End of Main Wrapper Area-->
+
         <!--Start of Login Form-->
         <div id="quickview-login">
             <!-- Modal -->
@@ -330,104 +332,105 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
                         </div>
                         <div class="modal-body">
-							<div class="form-pop-up-content ptb-60 pl-60 pr-60">
-								<div class="area-title text-center mb-43">
-									<h2 class="pt-7 pb-7 pl-40 pr-40">Login</h2>
-								</div>
-								<form method="post" action="#">
-									<div class="form-box">
-										<input type="text" name="username" placeholder="User Name" class="mb-14"/>
-										<input type="password" name="pass" placeholder="Password"/>
-									</div>
-									<div class="fix ptb-30">
-										<span class="remember pull-left"><input class="p-0 pull-left" type="checkbox"/>Lưu mật khẩu</span>
-										<span class="pull-right"><a href="#">Forget Password?</a></span>
-									</div>
-									<div class="text-center">
-										<button type="submit" class="text-uppercase">Đăng nhập</button>
-									</div>
-								</form>
-							</div>
-						</div>	
-					</div>	
-				</div>
-			</div>
+                            <div class="form-pop-up-content ptb-60 pl-60 pr-60">
+                                <div class="area-title text-center mb-43">
+                                    <h2 class="pt-7 pb-7 pl-40 pr-40">Login</h2>
+                                </div>
+                                <form method="post" action="#">
+                                    <div class="form-box">
+                                        <input type="text" name="username" placeholder="User Name" class="mb-14" />
+                                        <input type="password" name="pass" placeholder="Password" />
+                                    </div>
+                                    <div class="fix ptb-30">
+                                        <span class="remember pull-left">
+                                            <input class="p-0 pull-left" type="checkbox" />Lưu mật khẩu</span>
+                                        <span class="pull-right"><a href="#">Forget Password?</a></span>
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="text-uppercase">Đăng nhập</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--End of Login Form-->
-       
-        
+
+
         <!-- jquery latest version
-		========================================================= -->	
+		========================================================= -->
         <script src="js/vendor/jquery-1.12.4.min.js"></script>
-        
+
         <!-- Bootstrap framework js
-		========================================================= -->			
+		========================================================= -->
         <script src="js/bootstrap.min.js"></script>
-        
+
         <!-- Owl Carousel js
-		========================================================= -->		
+		========================================================= -->
         <script src="js/owl.carousel.min.js"></script>
-        
+
         <!-- nivo slider js
-		========================================================= -->	    
-		<script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
-		<script src="lib/nivo-slider/home.js" type="text/javascript"></script>
-        
+		========================================================= -->
+        <script src="lib/nivo-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+        <script src="lib/nivo-slider/home.js" type="text/javascript"></script>
+
         <!-- Js plugins included in this file
-		========================================================= -->	
+		========================================================= -->
         <script src="js/plugins.js"></script>
-        
+
         <!-- Google Map js
-		============================================ --> 		
-        
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLSFRa0DyBj9VGzT7GM6SFbSMcG0YNBM "></script>
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-		<script>
-			function initialize() {
-			  var mapOptions = {
-				zoom: 15,
-				scrollwheel: false,
-				center: new google.maps.LatLng(23.763494, 90.432226)
-			  };
+		============================================ -->
 
-			  var map = new google.maps.Map(document.getElementById('googleMap'),
-				  mapOptions);
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSLSFRa0DyBj9VGzT7GM6SFbSMcG0YNBM "></script>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script>
+            function initialize() {
+                var mapOptions = {
+                    zoom: 15,
+                    scrollwheel: false,
+                    center: new google.maps.LatLng(23.763494, 90.432226)
+                };
+
+                var map = new google.maps.Map(document.getElementById('googleMap'),
+                    mapOptions);
 
 
-			  var marker = new google.maps.Marker({
-				position: map.getCenter(),
-				animation:google.maps.Animation.BOUNCE,
-				icon: 'images/map-marker.png',
-				map: map
-			  });
-                
-			}
-                
-			google.maps.event.addDomListener(window, 'load', initialize);
+                var marker = new google.maps.Marker({
+                    position: map.getCenter(),
+                    animation: google.maps.Animation.BOUNCE,
+                    icon: 'images/map-marker.png',
+                    map: map
+                });
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
-        
-		<!-- Video Player JS
-		========================================================= -->			
+
+        <!-- Video Player JS
+		========================================================= -->
         <script src="js/jquery.mb.YTPlayer.js"></script>
-        
-		<!-- AJax Mail JS
-		========================================================= -->			
+
+        <!-- AJax Mail JS
+		========================================================= -->
         <script src="js/ajax-mail.js"></script>
-        
-		<!-- Mail Chimp JS
-		========================================================= -->			
+
+        <!-- Mail Chimp JS
+		========================================================= -->
         <script src="js/jquery.ajaxchimp.min.js"></script>
-        
-		<!-- StyleSwitch JS
-		========================================================= -->		
+
+        <!-- StyleSwitch JS
+		========================================================= -->
         <script src="js/styleswitch.js"></script>
-        
+
         <!-- Waypoint Js
-		========================================================= -->	
+		========================================================= -->
         <script src="js/waypoints.min.js"></script>
-        
+
         <!-- Main js file contents all jQuery plugins activation
-		========================================================= -->		
+		========================================================= -->
         <script src="js/main.js"></script>
     </form>
 </body>

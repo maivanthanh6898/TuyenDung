@@ -21,6 +21,7 @@ namespace TuyenDung
             if (Session["username"].ToString() != "")
             {
                 login.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
+                Div1.InnerHtml = "<a class=\"modal-view button\" href=\"manage.aspx\">QL Bài đăng</a>";
             }
         }
         private void loadContent()

@@ -31,6 +31,27 @@ namespace TuyenDung
                 SqlCommand comm = new SqlCommand();
                 comm.Connection = conn;
                 comm.CommandType = CommandType.Text;
+                comm.CommandText = "select * from tblContent where Id = " + id;
+                SqlDataReader dr = comm.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        if(dr["iPostedBy"].ToString()!= Session["id"].ToString())
+                        {
+                            Response.Write("<h1>Không được phép!!</h1>");
+                            Response.StatusCode = 403;
+                            Response.End();
+                        }
+                    }
+                }
+            }
+            using (SqlConnection conn = new SqlConnection(con))
+            {
+                conn.Open();
+                SqlCommand comm = new SqlCommand();
+                comm.Connection = conn;
+                comm.CommandType = CommandType.Text;
                 comm.CommandText = "select * from tblCv where iContenId = " + id;
                 SqlDataAdapter da = new SqlDataAdapter(comm);
                 DataTable dt = new DataTable();

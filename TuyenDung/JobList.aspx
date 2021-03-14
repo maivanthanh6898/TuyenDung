@@ -109,6 +109,8 @@
                                 </nav>
                                 <div class="login-btn pt-36" id="login" runat="server">
                                 </div>
+                                <div class="login-btn pt-36" id="Div1" runat="server">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -215,7 +217,7 @@
                                                 <a href="JobDetail.aspx?id=<%# Eval("Id") %>" class="button button-red">Full Time</a>
                                             </div>
                                         </div>
-                                        </div>
+                                    </div>
                                 </ItemTemplate>
                             </asp:Repeater>
                         </div>

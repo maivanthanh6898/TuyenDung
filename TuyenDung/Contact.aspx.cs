@@ -11,7 +11,12 @@ namespace TuyenDung
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["username"].ToString() != "")
+            {
+                //Response.Redirect("JobList.aspx?id=" + id);
+                login.InnerHtml = "<a class=\"modal-view button\" href=\"Editor.aspx\">Đăng bài</a>";
+                Div1.InnerHtml = "<a class=\"modal-view button\" href=\"manage.aspx\">QL Bài đăng</a>";
+            }
         }
     }
 }

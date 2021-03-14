@@ -11,17 +11,8 @@ namespace TuyenDung
 {
 
 
-    public partial class DataTableJob
+    public partial class manage
     {
-
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// login control.
@@ -33,21 +24,12 @@ namespace TuyenDung
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
 
         /// <summary>
-        /// Div1 control.
+        /// Repeater control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
-
-        /// <summary>
-        /// NANA control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList NANA;
+        protected global::System.Web.UI.WebControls.Repeater Repeater;
     }
 }
